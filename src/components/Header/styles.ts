@@ -39,6 +39,9 @@ export const HeaderContainer = styled.header`
 
         }
 
-        
+        // Esconde menu quando o tamanho da tela for menor que 540px
+        @media (max-width: 830px) {
+            display: none;
+       }
     }
 `
