@@ -3,6 +3,7 @@ import { HeaderContainer } from "./styles";
 import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila.svg';
 
 import { NavLink } from 'react-router-dom'
+import { Button } from "../Button";
 
 export function Header() {
     return (
@@ -25,7 +26,7 @@ export function Header() {
                     Contato
                 </NavLink>
             </nav>
-
+            <Button />
         </HeaderContainer>
     )
 }

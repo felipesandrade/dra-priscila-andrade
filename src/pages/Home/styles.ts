@@ -5,5 +5,5 @@ export const HomeContainer = styled.main`
 
     display: flex;
 
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 `

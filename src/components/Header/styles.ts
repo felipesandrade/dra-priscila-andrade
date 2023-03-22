@@ -7,6 +7,10 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     background-color: ${(props) => props.theme['purple-300']};
 
+    img {
+        margin-left: 1rem;
+    }
+
     nav {
         display: flex;
         gap: 1rem;
@@ -18,16 +22,18 @@ export const HeaderContainer = styled.header`
 
             text-decoration: none;
 
+            font-size: 16px;
+            font-weight: bold;
+
             color: ${(props) => props.theme['purple-500']};
 
             &:hover {
                 color: ${(props) => props.theme['purple-700']};
-            }
-
-            &.active {
                 border-bottom: 3px solid;
                 padding-block: 1.8rem;
-                
+            }
+
+            &.active {    
                 color: ${(props) => props.theme['purple-700']};
             }
 
