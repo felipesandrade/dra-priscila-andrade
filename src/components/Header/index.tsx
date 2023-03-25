@@ -1,14 +1,19 @@
-import { HeaderContainer } from "./styles";
+import { HeaderContainer, MenuButton } from "./styles";
 
 import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila.svg';
 
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import { List } from 'phosphor-react';
+
 import { Button } from "../Button";
 
 export function Header() {
     return (
         <HeaderContainer>
             <img src={logoDraRosaPriscila} alt="Nome da médica com fonte"/>
+            <MenuButton>
+                <List size={28} />
+            </MenuButton>
             <nav>
                 <NavLink to="/" title="Home">
                     Início

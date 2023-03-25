@@ -45,3 +45,29 @@ export const HeaderContainer = styled.header`
        }
     }
 `
+
+export const MenuButton = styled.button`
+    border: 0;
+    padding: 1rem;
+    border-radius: 8px;
+
+    display: none;
+    transition: background-color 0.2s ease-in-out;
+
+    background-color: ${(props) => props.theme['purple-300']};
+    color: ${(props) => props.theme['purple-700']};
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    &:hover {
+        transition: 0.3s;
+        color: ${(props) => props.theme['white']};
+        background: ${(props) => props.theme['purple-700']};
+    }
+
+    @media(max-width: 830px) {
+        display: flex;
+    }
+`

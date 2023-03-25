@@ -25,4 +25,9 @@ export const ButtonContainer = styled.button`
         transition: 0.3s;
         background: ${(props) => props.theme['purple-700']};
     }
+
+     // Esconde menu quando o tamanho da tela for menor que 540px
+     @media (max-width: 830px) {
+            display: none;
+    }
 `
