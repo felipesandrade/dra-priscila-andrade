@@ -38,12 +38,45 @@ export const HeaderContainer = styled.header`
             }
 
         }
-
-        // Esconde menu quando o tamanho da tela for menor que 540px
-        @media (max-width: 830px) {
-            display: none;
-       }
     }
+
+     // Esconde a navbar quando o tamanho da tela for menor que 830px
+     @media (max-width: 830px) {
+            
+            .navigation-menu {
+                // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar)
+                position: absolute;
+                top: 60px;
+                left: 0;
+                // stacks the li tags vertically 
+                flex-direction: column;
+                // makes menu span full height and width
+                width: 100%;
+                height: calc(100vh - 77px);
+                background-color: white;
+                border-top: 1px solid black;
+                display: none;
+            }    
+             
+            .navigation-menu a {
+                // centers link text and strips off margin
+                text-align: center;
+                margin: 0;
+                color: black;
+                // increases the surface area of the anchor tag to span the full width of the menu
+                width: 100%;
+                padding: 1.5rem 0;
+            }
+
+            .navigation-menu a:hover {
+                background-color: #eee;
+            }
+            
+            .navigation-menu.expanded {
+                display: block;
+            }
+
+       }
 `
 
 export const MenuButton = styled.button`
@@ -67,6 +100,7 @@ export const MenuButton = styled.button`
         background: ${(props) => props.theme['purple-700']};
     }
 
+    //Mostra o menu do tipo list quando o tamanho da tela for menor que 830px
     @media(max-width: 830px) {
         display: flex;
     }

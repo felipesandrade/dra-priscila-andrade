@@ -6,15 +6,21 @@ import { NavLink } from 'react-router-dom';
 import { List } from 'phosphor-react';
 
 import { Button } from "../Button";
+import { useState } from "react";
 
 export function Header() {
+    const [isNavExpanded, setIsNavExpanded] = useState(false);
+
     return (
         <HeaderContainer>
             <img src={logoDraRosaPriscila} alt="Nome da médica com fonte"/>
             <MenuButton>
-                <List size={28} />
+                <List size={28} onClick={() => { setIsNavExpanded(!isNavExpanded) }}/>
             </MenuButton>
-            <nav>
+            <nav className={
+                            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+                           }
+            >
                 <NavLink to="/" title="Home">
                     Início
                 </NavLink>
