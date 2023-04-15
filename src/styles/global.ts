@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-       background: ${(props) => props.theme['gray-100']};
+       background: ${(props) => props.theme['gray-50']};
        color: ${(props) => props.theme['gray-900']};
        -webkit-font-smoothing: antialiased;
        -moz-osx-font-smoothing: grayscale;

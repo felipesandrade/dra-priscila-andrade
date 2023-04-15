@@ -44,17 +44,17 @@ export const HeaderContainer = styled.header`
      @media (max-width: 830px) {
             
             .navigation-menu {
-                // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar)
+                // navigation menu is positioned to start 5rem from the top of the document (which is directly below the navbar)
                 position: absolute;
-                top: 60px;
+                top: 5rem;
                 left: 0;
                 // stacks the li tags vertically 
                 flex-direction: column;
                 // makes menu span full height and width
                 width: 100%;
                 height: calc(100vh - 77px);
-                background-color: white;
-                border-top: 1px solid black;
+                background-color: ${(props) => props.theme['gray-50']};
+                border-bottom: 3px solid;
                 display: none;
             }    
              
@@ -69,7 +69,7 @@ export const HeaderContainer = styled.header`
             }
 
             .navigation-menu a:hover {
-                background-color: #eee;
+                background-color: ${(props) => props.theme['white']};
             }
             
             .navigation-menu.expanded {
@@ -82,6 +82,7 @@ export const HeaderContainer = styled.header`
 export const MenuButton = styled.button`
     border: 0;
     padding: 1rem;
+    margin-right: 1rem;
     border-radius: 8px;
 
     display: none;
