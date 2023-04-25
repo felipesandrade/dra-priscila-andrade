@@ -7,7 +7,7 @@ import { Location } from "../../components/Location";
 
 export function DefaultLayout() {
     return (
-        <LayoutContainer>
+        <LayoutContainer fluid={true}>
             <Header />
             {/* Renderiza as rotas e envia para o componente correto */}
             <Outlet />

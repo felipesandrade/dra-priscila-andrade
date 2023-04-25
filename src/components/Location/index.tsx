@@ -6,15 +6,19 @@ import {
     TitleAdress,
     Wrapper} from "./styles";
 
-    import { 
-        MapPin,
-        PhoneCall, 
-        WhatsappLogo } from 'phosphor-react'; 
+import { 
+    MapPin,
+    PhoneCall, 
+    WhatsappLogo } from 'phosphor-react';
+    
+import { Element } from 'react-scroll';
+    
 
 
 
 export function Location() {
     return (
+        <Element name="location">
         <LocationContainer>
             <Wrapper>
                 <TitleAdress>
@@ -50,5 +54,6 @@ export function Location() {
                 />
             </Map>
         </LocationContainer>
+        </Element>
     )
 }

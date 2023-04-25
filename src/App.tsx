@@ -4,6 +4,7 @@ import { Router } from './Router';
 
 import { GlobalStyle } from './styles/global';
 import { defaultTheme } from './styles/themes/default';
+import 'bootstrap/dist/css/bootstrap.css';
 
 export function App() {
 

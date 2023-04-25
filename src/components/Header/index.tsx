@@ -3,6 +3,7 @@ import { HeaderContainer, MenuButton } from "./styles";
 import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila.svg';
 
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { List } from 'phosphor-react';
 
 import { Button } from "../Button";
@@ -33,9 +34,12 @@ export function Header() {
                 <NavLink to="/tratamentos" title="Tratamentos">
                     Tratamentos
                 </NavLink>
-                <NavLink to="/contato" title="Contato">
+                {/* <NavLink to="/contato" title="Localização">
                     Contato
-                </NavLink>
+                </NavLink>  */}
+                 <Link activeClass="active" to="location" smooth={true} spy={true} duration={250} title="Localização">
+                    Contato
+                </Link> 
             </nav>
             <Button />
         </HeaderContainer>

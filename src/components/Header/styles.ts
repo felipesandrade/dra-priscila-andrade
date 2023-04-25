@@ -2,20 +2,21 @@ import styled from 'styled-components'
 
 
 export const HeaderContainer = styled.header`
+    height: 5.3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: ${(props) => props.theme['purple-300']};
 
     img {
-        margin-left: 1rem;
+        margin-left: 4em;
     }
 
     nav {
         display: flex;
         gap: 1rem;
 
-        a {
+        a, Link {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -31,6 +32,7 @@ export const HeaderContainer = styled.header`
                 color: ${(props) => props.theme['purple-700']};
                 border-bottom: 3px solid;
                 padding-block: 1.8rem;
+                transition: 0.3s;
             }
 
             &.active {    

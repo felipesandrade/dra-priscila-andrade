@@ -5,7 +5,7 @@ export const ButtonContainer = styled.button`
     height: 3.25rem;
     border: 0;
     border-radius: 8px;
-    margin-right: 1rem;
+    margin-right: 4rem;
 
     background: ${(props) => props.theme['purple-700']};
 
