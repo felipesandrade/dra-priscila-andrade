@@ -37,7 +37,7 @@ export function Header() {
                 {/* <NavLink to="/contato" title="Localização">
                     Contato
                 </NavLink>  */}
-                 <Link activeClass="active" to="location" smooth={true} spy={true} duration={250} title="Localização">
+                 <Link activeClass="active" className="scrollLink" to="location" smooth={true} spy={true} duration={250} title="Localização">
                     Contato
                 </Link> 
             </nav>

@@ -1,22 +1,7 @@
 import styled from 'styled-components'
-import  image from '../../assets/img-dra-rosa-priscila-principal.png';
-import { Link } from 'react-router-dom';
-
 
 export const HomeContainer = styled.main`
-    padding-bottom: 12rem;
-`
-export const Image = styled.image`
-    background-image: url(${image});
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    opacity: 5;
 `
 export const SlideButton = styled.button`
     width: 7.25rem;

@@ -1,8 +1,11 @@
-import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
+import { Carousel } from 'react-bootstrap';
 
-import { HomeContainer, Image, SlideButton } from "./styles";
-import  DraRosaPriscila from '../../assets/img-dra-rosa-priscila-principal.png';
+import { HomeContainer, 
+         SlideButton } from "./styles";
+
+import { Location } from '../Location';
+import { About } from '../About';
 
 
 export function Home() {
@@ -42,12 +45,8 @@ export function Home() {
                     </Carousel.Item>
 
                 </Carousel>
-                {/* <img src={DraRosaPriscila} title="Foto Principal Dra Rosa Priscila" /> */}
-                {/* <Image /> */}
-                {/* <div>
-                    <h1>Dra. Rosa Priscila</h1>
-                    <h2>Reumatologista</h2>
-                </div> */}
+                <About />
+                <Location />
             </HomeContainer>
     )
 }

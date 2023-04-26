@@ -16,7 +16,7 @@ export const HeaderContainer = styled.header`
         display: flex;
         gap: 1rem;
 
-        a, Link {
+        a, .scroll {
             display: flex;
             justify-content: center;
             align-items: center;
