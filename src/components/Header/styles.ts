@@ -25,6 +25,7 @@ export const HeaderContainer = styled.header`
 
             font-size: 16px;
             font-weight: bold;
+            cursor: pointer;
 
             color: ${(props) => props.theme['purple-500']};
 
@@ -48,6 +49,7 @@ export const HeaderContainer = styled.header`
             .navigation-menu {
                 // navigation menu is positioned to start 5rem from the top of the document (which is directly below the navbar)
                 position: absolute;
+                z-index: 999;
                 top: 5rem;
                 left: 0;
                 // stacks the li tags vertically 
