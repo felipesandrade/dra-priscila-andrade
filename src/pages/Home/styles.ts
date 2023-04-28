@@ -1,7 +1,13 @@
 import styled from 'styled-components';
+import { Carousel } from 'react-bootstrap';
 
 export const HomeContainer = styled.main`
     width: 100%;
+`
+export const CarouselContainer = styled(Carousel)`
+    img {
+        object-fit: cover;
+    }
 `
 export const SlideButton = styled.button`
     width: 7.25rem;

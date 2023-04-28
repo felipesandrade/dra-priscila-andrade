@@ -25,18 +25,15 @@ export function Header() {
                 <NavLink to="/" title="Home">
                     Início
                 </NavLink>
-                <NavLink to="/sobre" title="Sobre">
-                    Sobre
-                </NavLink>
+                <Link activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={250} title="Sobre mim">
+                    Sobre mim
+                </Link>
                 <NavLink to="/reumatologia" title="Reumatologia">
                     Reumatologia
                 </NavLink>
                 <NavLink to="/tratamentos" title="Tratamentos">
                     Tratamentos
                 </NavLink>
-                {/* <NavLink to="/contato" title="Localização">
-                    Contato
-                </NavLink>  */}
                  <Link activeClass="active" className="scrollLink" to="location" smooth={true} spy={true} duration={250} title="Localização">
                     Contato
                 </Link> 

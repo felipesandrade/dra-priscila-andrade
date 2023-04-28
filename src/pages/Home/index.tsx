@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Carousel } from 'react-bootstrap';
 
 import { HomeContainer, 
+         CarouselContainer, 
          SlideButton } from "./styles";
 
 import { Location } from '../Location';
@@ -11,7 +12,7 @@ import { About } from '../About';
 export function Home() {
     return (
             <HomeContainer>
-                <Carousel>
+                <CarouselContainer>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
@@ -44,7 +45,7 @@ export function Home() {
                         </Carousel.Caption>
                     </Carousel.Item>
 
-                </Carousel>
+                </CarouselContainer>
                 <About />
                 <Location />
             </HomeContainer>
