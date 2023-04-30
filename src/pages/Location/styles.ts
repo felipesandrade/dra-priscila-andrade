@@ -141,5 +141,8 @@ export const WhatsApp = styled.div`
 
 export const Map = styled.div`
     width: 100%;
+    iframe {
+        border-radius: 8px;
+    }
 `
 

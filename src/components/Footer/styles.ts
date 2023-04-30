@@ -2,21 +2,18 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
     width: 100%;
+    
     display: flex;
     align-items: center;
-    justify-content: space-between;
     justify-items: center;
-    gap: 8rem;
+    justify-content: space-between;
+    gap: 2rem;
+
     
     height: 4rem;
     padding: 2rem;
     bottom: 0;
 
-    //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
-    @media(max-width: 430px) {
-        flex-direction: column;
-        gap: 2rem;
-    }
 `
 export const SocialMedia = styled.div`
     color: ${(props) => props.theme['purple-700']};
@@ -44,8 +41,4 @@ export const Copyright = styled.div`
 
     color: ${(props) => props.theme['purple-500']};
 
-    //Corrige o espaçamento quando o tamano da tela for reduzida.
-    @media(max-width: 430px) {
-        padding-bottom: 2rem;
-    }
 `

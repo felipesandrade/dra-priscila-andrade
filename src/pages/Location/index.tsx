@@ -34,7 +34,7 @@ export function Location() {
                 </Adress>
                 <Phone>
                     <PhoneCall size={30} weight="fill" />
-                    <span><a href="tel:85%32243533">(85) 3224.3533</a></span>
+                    <span><a href="tel:8532243533">(85) 3224.3533</a></span>
                 </Phone>
                 <Phone>
                     <WhatsappLogo size={30} weight="fill" />
