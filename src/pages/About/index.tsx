@@ -48,8 +48,8 @@ export function About() {
                 <SkillsContainer>
                     <ul>
                         <li>
-                            <div><span><CheckSquare size={32} weight="fill"/></span></div>
-                            <div><span>Médica graduada pela Universidade Estadual do Ceará</span></div>
+                            <span><CheckSquare size={32} weight="fill"/></span>
+                            <span>Médica graduada pela Universidade Estadual do Ceará</span>
                         </li>
                         <li>
                             <span><CheckSquare size={32} weight="fill"/></span>

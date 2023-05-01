@@ -10,7 +10,7 @@ export const AboutContainer = styled.div`
     position: relative;
     gap: 4rem;
 
-    padding: 1rem;
+    padding: 1rem 1rem 5rem;
 
     //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
     @media(max-width: 768px) {
@@ -19,9 +19,7 @@ export const AboutContainer = styled.div`
     }
 `
 
-export const Title = styled.div`
-    font-size: 2.25rem;
-    font-weight: 500;
+export const Title = styled.h2`
     text-align: center;
     
     color: ${(props) => props.theme['purple-700']};
@@ -86,21 +84,21 @@ export const SkillsContainer = styled.div`
 
     ul {
         padding: 1rem;
+
+        list-style: none;
     }
 
     li {
         display: flex;
-        
+        align-items: center;
+        justify-content: left;
+        gap: 1rem;
+
         padding: 0.5rem;
-        list-style: none;
         margin: 0;
 
         border-bottom: 1px solid;
         border-color: ${(props) => props.theme['purple-500']};
-    }
-
-    span {
-        margin-right: 1rem;
     }
 
     svg {

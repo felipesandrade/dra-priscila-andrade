@@ -7,6 +7,7 @@ import { HomeContainer,
 
 import { Location } from '../Location';
 import { About } from '../About';
+import { Consultaion } from '../Consultation';
 
 
 export function Home() {
@@ -24,7 +25,7 @@ export function Home() {
                         <Carousel.Caption>
                         <h3>Dra Rosa Priscila</h3>
                         <h5>Reumatoligista</h5>
-                        <p>Juntos, buscando melhorar sua a qualidade de vida.</p>
+                        <p>Juntos, buscando melhorar sua qualidade de vida.</p>
                         <Link to = '/sobre'><SlideButton>Saiba mais</SlideButton></Link>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -40,13 +41,14 @@ export function Home() {
 
                         <Carousel.Caption>
                         <h3>O que é Reumatologia?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Área da medicina destinada ao diagnóstico e tratamento das doenças do aparelho locomotor.</p>
                         <Link to = '/reumaotlogia'><SlideButton>Reumatologia</SlideButton></Link>
                         </Carousel.Caption>
                     </Carousel.Item>
 
                 </CarouselContainer>
                 <About />
+                <Consultaion />
                 <Location />
             </HomeContainer>
     )
