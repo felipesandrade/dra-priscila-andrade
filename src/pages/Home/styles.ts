@@ -5,7 +5,7 @@ export const HomeContainer = styled.main`
     width: 100%;
 `
 export const CarouselContainer = styled(Carousel)`
-    padding-bottom: 4rem;
+    margin-bottom: 4rem;
     img {
         object-fit: cover;
     }

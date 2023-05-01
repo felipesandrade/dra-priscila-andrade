@@ -6,10 +6,11 @@ export const ConsultaionContainer = styled.div`
     padding: 1rem 1rem 5rem;
 `
 
-export const Title = styled.h2`
+export const Title = styled.h1`
+    font-weight: 600;
     text-align: center;
 
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 
     color: ${(props) => props.theme['purple-700']};
 `

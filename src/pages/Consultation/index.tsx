@@ -14,7 +14,7 @@ export function Consultaion() {
     return (
         <ConsultaionContainer>
             <Title>
-                <h1>O que esperar da Consulta Particular ?</h1>
+                O que esperar da Consulta Particular ?
             </Title>
             <BeneftisContent>
                 <BenefitCard>

@@ -3,6 +3,7 @@ import { AboutContainer,
          Content, 
          DoctorContainer, 
          ImageContainer, 
+         SkillCard, 
          SkillsContainer, 
          Title } from "./styles";
 import { CheckSquare } from 'phosphor-react';
@@ -13,7 +14,7 @@ export function About() {
         <Element name="about">
             <AboutContainer>
                 <Title>
-                    <h1>Quem é Dra. Rosa Priscila ?</h1>
+                    Quem é Dra. Rosa Priscila ?
                 </Title>
                 <Content>
                     <ImageContainer>
@@ -46,21 +47,26 @@ export function About() {
                     </DoctorContainer>
                 </Content>
                 <SkillsContainer>
-                    <ul>
-                        <li>
-                            <span><CheckSquare size={32} weight="fill"/></span>
-                            <span>Médica graduada pela Universidade Estadual do Ceará</span>
-                        </li>
-                        <li>
-                            <span><CheckSquare size={32} weight="fill"/></span>
-                            <span>Residência em Clínica Médica pela Hospital Universitário Walter Cantídio</span>
-                        </li>
-                        <li>
-                            <span><CheckSquare size={32} weight="fill"/></span>
-                            <span>Residência em Reumatologia pelo Hospital Geral de Fortaleza</span>
-                        </li>
-                    </ul>
+                    <SkillCard>
+                        <header>
+                            <CheckSquare size={32} weight="fill" />
+                            <strong>Médica graduada pela Universidade Estadual do Ceará</strong>
+                        </header>
+                    </SkillCard>
 
+                    <SkillCard>
+                        <header>
+                            <CheckSquare size={32} weight="fill" />
+                            <strong>Residência em Clínica Médica pela Hospital Universitário Walter Cantídio</strong>
+                        </header>
+                    </SkillCard>
+
+                    <SkillCard>
+                        <header>
+                            <CheckSquare size={32} weight="fill" />
+                            <strong>Residência em Reumatologia pelo Hospital Geral de Fortaleza</strong>
+                        </header>
+                    </SkillCard>
                 </SkillsContainer>
             </AboutContainer>
         </Element>

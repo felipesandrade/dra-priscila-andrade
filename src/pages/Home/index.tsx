@@ -8,6 +8,7 @@ import { HomeContainer,
 import { Location } from '../Location';
 import { About } from '../About';
 import { Consultaion } from '../Consultation';
+import { Faq } from '../Faq';
 
 
 export function Home() {
@@ -49,6 +50,7 @@ export function Home() {
                 </CarouselContainer>
                 <About />
                 <Consultaion />
+                <Faq />
                 <Location />
             </HomeContainer>
     )

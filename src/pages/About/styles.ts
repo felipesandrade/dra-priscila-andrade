@@ -19,7 +19,8 @@ export const AboutContainer = styled.div`
     }
 `
 
-export const Title = styled.h2`
+export const Title = styled.h1`
+    font-weight: 600;
     text-align: center;
     
     color: ${(props) => props.theme['purple-700']};
@@ -70,45 +71,42 @@ export const DoctorContainer = styled.div`
 
 export const SkillsContainer = styled.div`
     width: calc(100% - 80px - 80px);
- 
-    border-radius: 8px;
-    
-    font-size: 1.563rem;
-    font-weight: 300;
-    line-height: 3rem;
-    text-align: left;
 
+    margin:  0 auto;
 
-    color: ${(props) => props.theme['gray-500']};
-    background-color: ${(props) => props.theme['purple-300']};
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
 
-    ul {
-        padding: 1rem;
-
-        list-style: none;
-    }
-
-    li {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        gap: 1rem;
-
-        padding: 0.5rem;
-        margin: 0;
-
-        border-bottom: 1px solid;
-        border-color: ${(props) => props.theme['purple-500']};
-    }
-
-    svg {
-        color: ${(props) => props.theme['purple-700']};
-    }
     //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
     @media(max-width: 768px) {
-        font-size: 5vw;
-        line-height: 2rem;
         width: auto;
         height: auto;
+    }
+`
+export const SkillCard = styled.div`
+    border-radius: 8px;
+
+    padding: 2rem;
+
+    background: ${(props) => props.theme['purple-300']};
+
+    header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        color: ${(props) => props.theme['gray-500']};
+
+        svg {
+            min-width: 32px;
+            color: ${(props) => props.theme['purple-700']};
+        }
+    }
+
+    strong {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 300;
     }
 `
