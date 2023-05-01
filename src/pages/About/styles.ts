@@ -89,8 +89,11 @@ export const SkillsContainer = styled.div`
     }
 
     li {
+        display: flex;
+        
         padding: 0.5rem;
         list-style: none;
+        margin: 0;
 
         border-bottom: 1px solid;
         border-color: ${(props) => props.theme['purple-500']};
