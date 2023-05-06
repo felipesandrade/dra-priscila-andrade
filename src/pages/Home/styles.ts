@@ -1,8 +1,14 @@
 import styled from 'styled-components';
 import { Carousel } from 'react-bootstrap';
 
+import { Button } from '../../components/Button';
+
 export const HomeContainer = styled.main`
     width: 100%;
+
+    a {
+        text-decoration: none;
+    }
 `
 export const CarouselContainer = styled(Carousel)`
     margin-bottom: 4rem;
@@ -10,25 +16,16 @@ export const CarouselContainer = styled(Carousel)`
         object-fit: cover;
     }
 `
-export const SlideButton = styled.button`
-    width: 7.25rem;
-    height: 3.25rem;
-    border: 0;
-    border-radius: 8px;
+export const SlideButton = styled(Button)`
+    min-width: 7.25rem;
+    min-height: 3.25rem;
+    margin: 0;
+
+    display: inline;
 
     background: ${(props) => props.theme['purple-700']};
 
-
-    font-size: 0.875rem;
-    font-weight: bold;
-    color: ${(props) => props.theme['white']};
-
-
-    cursor: pointer;
-
     &:hover {
-        opacity: 0.9;
-        transition: 0.3s;
         background: ${(props) => props.theme['purple-700']};
     }
 `

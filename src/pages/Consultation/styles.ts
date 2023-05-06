@@ -34,6 +34,7 @@ export const BeneftisContent = styled.div`
 `
 
 export const BenefitCard = styled.div`
+    min-width: 160px;
     text-align: center;
 
     color: ${(props) => props.theme['gray-500']};

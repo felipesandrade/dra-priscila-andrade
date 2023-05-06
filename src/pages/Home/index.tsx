@@ -10,7 +10,6 @@ import { About } from '../About';
 import { Consultaion } from '../Consultation';
 import { Faq } from '../Faq';
 
-
 export function Home() {
     return (
             <HomeContainer>
@@ -27,7 +26,13 @@ export function Home() {
                         <h3>Dra Rosa Priscila</h3>
                         <h5>Reumatoligista</h5>
                         <p>Juntos, buscando melhorar sua qualidade de vida.</p>
-                        <Link to = '/sobre'><SlideButton>Saiba mais</SlideButton></Link>
+                        <Link to = '/sobre'>
+                            <SlideButton 
+                                iconExists={false}
+                                className
+                                children="Saiba mais"
+                            />
+                        </Link>
                         </Carousel.Caption>
                     </Carousel.Item>
 
@@ -43,7 +48,13 @@ export function Home() {
                         <Carousel.Caption>
                         <h3>O que é Reumatologia?</h3>
                         <p>Área da medicina destinada ao diagnóstico e tratamento das doenças do aparelho locomotor.</p>
-                        <Link to = '/reumaotlogia'><SlideButton>Reumatologia</SlideButton></Link>
+                        <Link to = '/reumaotlogia'>
+                            <SlideButton
+                                iconExists={false}
+                                className
+                                children="Reumatologia"
+                            />
+                        </Link>
                         </Carousel.Caption>
                     </Carousel.Item>
 

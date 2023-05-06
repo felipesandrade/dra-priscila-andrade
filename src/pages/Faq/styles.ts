@@ -16,4 +16,6 @@ export const Title = styled.h1`
 
 export const FaqContent = styled.div``
 
+export const FaqCard = styled.div``
+
 

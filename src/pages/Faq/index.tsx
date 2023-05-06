@@ -1,4 +1,4 @@
-import { FaqContainer, Title } from "./styles";
+import { FaqCard, FaqContainer, FaqContent, Title } from "./styles";
 
 export function Faq() {
     return (
@@ -6,7 +6,13 @@ export function Faq() {
             <Title>
                 Principais dúvidas ?
             </Title>
-            
+            <FaqContent>
+                <FaqCard>
+                    <header>
+                        
+                    </header>
+                </FaqCard>
+            </FaqContent>
         </FaqContainer>
     )
 }
