@@ -9,7 +9,7 @@ export function Faq() {
             <FaqContent>
                 <FaqCard>
                     <header>
-                        Atende Plano de Saúde ? 
+                        <strong>Atende Plano de Saúde ? </strong>
                     </header>
                     <span>
                        Atualmente não atendo plano, por acreditar que para manter a 
@@ -20,7 +20,7 @@ export function Faq() {
                 </FaqCard>
                 <FaqCard>
                     <header>
-                        Emite Nota Fiscal ?
+                        <strong>Emite Nota Fiscal ?</strong>
                     </header>
                     <span>
                         Emitimos nota fiscal para todos os pacientes, facilitando o processo
@@ -29,7 +29,7 @@ export function Faq() {
                 </FaqCard>
                 <FaqCard>
                     <header>
-                        Quais as formas de pagamento ?
+                        <strong>Quais as formas de pagamento ?</strong>
                     </header>
                     <span>
                         Atualmente a consulta pode ser paga em dinheiro, pix e cartão de 
@@ -38,16 +38,16 @@ export function Faq() {
                 </FaqCard>
                 <FaqCard>
                     <header>
-                        Qual o valor da consulta ?
+                        <strong>Qual o valor da consulta ?</strong>
                     </header>
                     <span>
                         Atualmente a consulta presencial e a teleconsulta custam 
-                        R$ 350,00 reais com direito a retorno e30 dias.
+                        R$ 350,00 reais com direito a retorno em 30 dias.
                     </span>
                 </FaqCard>
                 <FaqCard>
                     <header>
-                        Qual o tempo de duração da consulta?
+                        <strong>Qual o tempo de duração da consulta ?</strong>
                     </header>
                     <span>
                         A consluta dura em torno de 60 minutos, onde farei todo o processo
@@ -59,14 +59,13 @@ export function Faq() {
                 </FaqCard>
                 <FaqCard>
                     <header>
-                        Como devo me preparar para consulta?
+                        <strong>Como devo me preparar para consulta?</strong>
                     </header>
                     <span>
-                        A consluta dura em torno de 60 minutos, onde farei todo o processo
-                        de escuta das queixas, alinhamento de expectativas,
-                        exame físico, solicitação e análise de exames, definição da 
-                        melhor opção de tramamento, e por fim orientação e emissão de documentação 
-                        médica, caso necessário.
+                        Use roupas leve para facilitar o seu exame físico, leve seus exames
+                        (de sangue e imagem, se tiver), faça uma lista de remédios, vitaminas
+                        ou suplementos que faz uso regular, anote suas queixas (quando iniciaram os
+                        sintomas, fatores de melhora ou piora).
                     </span>
                 </FaqCard>
             </FaqContent>
