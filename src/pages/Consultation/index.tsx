@@ -8,7 +8,7 @@ import { Calendar,
         KeyReturn, 
         ClockAfternoon, 
         Question,
-        Money } from 'phosphor-react';
+        Receipt } from 'phosphor-react';
 
 export function Consultaion() {
     return (
@@ -38,7 +38,7 @@ export function Consultaion() {
                         <KeyReturn size={32} weight="fill" />
                     </header>
                     <strong>
-                        Retorno
+                        Retorno garantido
                     </strong>
                 </BenefitCard>
                 <BenefitCard>
@@ -51,7 +51,7 @@ export function Consultaion() {
                 </BenefitCard>
                 <BenefitCard>
                     <header>
-                        <Money size={32} weight="fill" />
+                        <Receipt size={32} weight="fill" />
                     </header>
                     <strong>
                         Nota Fiscal

@@ -9,6 +9,7 @@ import { Location } from '../Location';
 import { About } from '../About';
 import { Consultaion } from '../Consultation';
 import { Faq } from '../Faq';
+import { Treatment } from '../Treatment';
 
 export function Home() {
     return (
@@ -60,6 +61,7 @@ export function Home() {
 
                 </CarouselContainer>
                 <About />
+                <Treatment />
                 <Consultaion />
                 <Faq />
                 <Location />

@@ -47,7 +47,6 @@ export const FaqCard = styled.div`
     span {
         font-size: 1.125rem;
         font-weight: 300;
-        
     }
 
 
