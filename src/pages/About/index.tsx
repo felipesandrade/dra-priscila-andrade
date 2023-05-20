@@ -7,7 +7,7 @@ import { AboutContainer,
          SkillsContainer, 
          Title } from "./styles";
 import { CheckSquare } from 'phosphor-react';
-import photo from '../../assets/img-dra-rosa-priscila-principal.png';
+import Photo from '../../assets/img-dra-rosa-priscila-principal.png';
 
 export function About() {
     return (
@@ -18,7 +18,7 @@ export function About() {
                 </Title>
                 <Content>
                     <ImageContainer>
-                        <img src={photo} title="Foto Principal Dra Rosa Priscila" alt="Foto Principal Dra Rosa Priscila"/> 
+                        <img src={Photo} title="Foto Principal Dra Rosa Priscila" alt="Foto Principal Dra Rosa Priscila"/> 
                     </ImageContainer>
                     <DoctorContainer>
                         <p><span>Em primeiro lugar, sejam bem-vindos.</span></p>
