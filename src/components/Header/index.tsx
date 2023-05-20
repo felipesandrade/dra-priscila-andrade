@@ -4,9 +4,10 @@ import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila.svg';
 
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
-import { List } from 'phosphor-react';
+import { List, WhatsappLogo } from 'phosphor-react';
 
 import { Button } from "../Button";
+
 import { useState } from "react";
 
 export function Header() {
@@ -25,20 +26,29 @@ export function Header() {
                 <NavLink to="/" title="Home">
                     Início
                 </NavLink>
-                <Link activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={250} title="Sobre mim">
+                <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={250} title="Sobre mim">
                     Sobre mim
                 </Link>
-                <NavLink to="/reumatologia" title="Reumatologia">
+                <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="treatment" smooth={true} spy={true} duration={250} title="Reumatologia">
                     Reumatologia
-                </NavLink>
-                <NavLink to="/tratamentos" title="Tratamentos">
-                    Tratamentos
-                </NavLink>
-                 <Link activeClass="active" className="scrollLink" to="location" smooth={true} spy={true} duration={250} title="Localização">
+                </Link>
+                <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="consultation" smooth={true} spy={true} duration={250} title="Vantagens Consulta Particular">
+                    Consulta
+                </Link>
+                <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="faq" smooth={true} spy={true} duration={250} title="Dúvidas">
+                    Dúvidas
+                </Link>
+                 <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="location" smooth={true} spy={true} duration={250} title="Localização">
                     Contato
                 </Link> 
             </nav>
-            <Button />
+            <a href="https://bit.ly/rpriscila-reumato" target="_blank">
+                <Button 
+                    iconExists={true}
+                    icon={<WhatsappLogo size={22} />}
+                    children="Agendar Consulta"           
+                />
+            </a>
         </HeaderContainer>
     )
 }

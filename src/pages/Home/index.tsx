@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll';
 import { Carousel } from 'react-bootstrap';
 
 import { HomeContainer, 
@@ -21,13 +21,13 @@ export function Home() {
                             src="../../src/assets/1.jpg"
                             height = "475"
                             width = "1425"
-                            alt="First slide"
+                            alt="Primeiro slide"
                         />
                         <Carousel.Caption>
                         <h3>Dra Rosa Priscila</h3>
                         <h5>Reumatoligista</h5>
                         <p>Juntos, buscando melhorar sua qualidade de vida.</p>
-                        <Link to = '/sobre'>
+                        <Link activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={250} title="Sobre mim">
                             <SlideButton 
                                 iconExists={false}
                                 className
@@ -43,13 +43,13 @@ export function Home() {
                         src="../../src/assets/2.jpg"
                         height = "475"
                         width = "1425"
-                        alt="Second slide"
+                        alt="Segundo slide"
                         />
 
                         <Carousel.Caption>
                         <h3>O que é Reumatologia?</h3>
                         <p>Área da medicina destinada ao diagnóstico e tratamento das doenças do aparelho locomotor.</p>
-                        <Link to = '/reumaotlogia'>
+                        <Link activeClass="active" className="scrollLink" to="treatment" smooth={true} spy={true} duration={250} title="Reumatologia">
                             <SlideButton
                                 iconExists={false}
                                 className
@@ -58,7 +58,6 @@ export function Home() {
                         </Link>
                         </Carousel.Caption>
                     </Carousel.Item>
-
                 </CarouselContainer>
                 <About />
                 <Treatment />

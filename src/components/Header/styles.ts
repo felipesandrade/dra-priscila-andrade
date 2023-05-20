@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 
 export const HeaderContainer = styled.header`
@@ -41,6 +41,10 @@ export const HeaderContainer = styled.header`
             }
 
         }
+    }
+
+    a {
+        text-decoration: none;
     }
 
      // Esconde a navbar quando o tamanho da tela for menor que 830px
