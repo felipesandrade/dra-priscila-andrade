@@ -70,8 +70,8 @@ export function Treatment(){
                         autoPlay={true}
                         autoPlaySpeed={2500}
                         infinite={true}
-                        transitionDuration={1000}
-                        focusOnSelect={true}
+                        // transitionDuration={1000}
+                        // focusOnSelect={true}
                         containerClass='custom-react-multi-carousel-list'
                     >
                         <TreatmentCard>

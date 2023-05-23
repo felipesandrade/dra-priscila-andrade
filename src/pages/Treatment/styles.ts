@@ -67,8 +67,8 @@ export const TreatmentCard = styled.div`
     justify-content: center;
 
     img {
-        width: 200px;
-        height: 150px;
+        width: 250px;
+        height: 200px;
         object-fit: cover;
 
         margin-bottom: 1rem;
@@ -83,8 +83,8 @@ export const TreatmentCard = styled.div`
     //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
     @media(max-width: 768px) {
         img {
-            width: auto;
-            height: auto;
+            width: 300px;
+            height: 250px;
             object-fit: cover;
         }
     }

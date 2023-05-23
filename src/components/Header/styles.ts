@@ -70,7 +70,7 @@ export const HeaderContainer = styled.header`
                 // centers link text and strips off margin
                 text-align: center;
                 margin: 0;
-                color: black;
+                color: ${(props) => props.theme['gray-500']};
                 // increases the surface area of the anchor tag to span the full width of the menu
                 width: 100%;
                 padding: 1.5rem 0;
