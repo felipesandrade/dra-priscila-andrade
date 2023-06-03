@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
     height: 5.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
+
+
     background-color: ${(props) => props.theme['purple-300']};
 
     img {
@@ -85,6 +85,17 @@ export const HeaderContainer = styled.header`
             }
 
        }
+`
+
+export const HeaderContent = styled.div`
+    max-width: 1440px;
+
+    margin: 0 auto;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 `
 
 export const MenuButton = styled.button`

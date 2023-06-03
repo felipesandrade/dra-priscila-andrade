@@ -3,18 +3,23 @@ import styled from 'styled-components'
 export const FooterContainer = styled.footer`
     width: 100%;
     
+    height: 4rem;
+`
+
+export const FooterContent = styled.div`
+    max-width: 1440px;
+
+    margin: 0 auto;
+
+    padding: 1rem 1rem 5rem;
+
     display: flex;
     align-items: center;
     justify-items: center;
     justify-content: space-between;
-    gap: 2rem;
-
-    
-    height: 4rem;
-    padding: 2rem;
-    bottom: 0;
-
+    /* gap: 2rem; */
 `
+
 export const SocialMedia = styled.div`
     color: ${(props) => props.theme['purple-700']};
 
