@@ -15,7 +15,7 @@ export const AboutContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     position: relative;
-    gap: 4rem;
+    gap: 2rem;
 
     padding: 1rem 1rem 5rem;
 
@@ -39,7 +39,7 @@ export const Content = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
 
 
      //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
@@ -94,7 +94,7 @@ export const SkillsContainer = styled.div`
 export const SkillCard = styled.div`
     border-radius: 8px;
 
-    padding: 2rem;
+    padding: 1.5rem;
 
     background: ${(props) => props.theme['purple-300']};
 
@@ -113,7 +113,7 @@ export const SkillCard = styled.div`
 
     strong {
         display: block;
-        font-size: 1.4rem;
+        font-size: 1.125rem;
         font-weight: 300;
     }
 `

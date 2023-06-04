@@ -15,7 +15,7 @@ export const Title = styled.h1`
     font-weight: 600;
     text-align: center;
 
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 
     color: ${(props) => props.theme['purple-700']};
 `
@@ -59,7 +59,7 @@ export const BenefitCard = styled.div`
     strong {
         display: block;
         margin-top: 1rem;
-        font-size: 1rem;
+        font-size: 1.125rem;
         font-weight: 300;
     }
 `

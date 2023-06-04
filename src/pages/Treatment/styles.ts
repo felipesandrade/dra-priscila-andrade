@@ -16,7 +16,7 @@ export const Title = styled.h1`
     font-weight: 600;
     text-align: center;
 
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 
     color: ${(props) => props.theme['purple-700']};
 `
@@ -72,8 +72,8 @@ export const TreatmentCard = styled.div`
     justify-content: center;
 
     img {
-        width: 250px;
-        height: 200px;
+        width: 200px;
+        height: 150px;
         object-fit: cover;
 
         margin-bottom: 1rem;

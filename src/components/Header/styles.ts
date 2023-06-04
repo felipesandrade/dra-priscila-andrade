@@ -1,28 +1,40 @@
 import styled from 'styled-components';
 
 
-export const HeaderContainer = styled.header`
-    height: 5.3rem;
+export const HeaderContainer = styled.div`
+    width: 100%;
+
+    margin: 0 auto;
+
+    position: static;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    background-color: ${(props) => props.theme['purple-300']}
+    height: 5.3rem;
+
+    border-bottom: 1px solid ${(props) => props.theme['purple-500']};
+    
+    background-color: ${(props) => props.theme['purple-300']};
 `
 
-export const HeaderContent = styled.div`
+export const HeaderContent = styled.header`
+    width: 100%;
     max-width: 1440px;
 
     margin: 0 auto;
+    padding: 0 24px;
     
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    img {
-        margin-left: 4em;
-    }
+    transition: all .3s ease-out;
 
     nav {
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
 
         a, .scroll {
             display: flex;
@@ -31,7 +43,7 @@ export const HeaderContent = styled.div`
 
             text-decoration: none;
 
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: bold;
             cursor: pointer;
 
@@ -53,11 +65,24 @@ export const HeaderContent = styled.div`
 
     a {
         text-decoration: none;
+
+        button {
+            margin: 0 auto;
+        }
+    } 
+
+    @media (max-width: 1140px) {
+        nav {
+            gap: 1rem;
+                a {
+                    font-size: 0.875rem;
+                }
+            }
     }
 
      // Esconde a navbar quando o tamanho da tela for menor que 830px
-     @media (max-width: 830px) {
-            
+     @media (max-width: 870px) {
+         
             .navigation-menu {
                 // navigation menu is positioned to start 5rem from the top of the document (which is directly below the navbar)
                 position: absolute;
@@ -94,15 +119,17 @@ export const HeaderContent = styled.div`
        }
 `
 
-export const MenuButton = styled.button`
-    width: 100%;
-
-    margin-right: 4rem;
-
+export const Wrapper = styled.div`
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: center;
+    justify-content: space-between;
+        
+    @media (max-width: 869px) {
+        width: 100%;
+    }
+`
 
+export const MenuButton = styled.button`
     border: 0;
 
     border-radius: 8px;
@@ -124,7 +151,7 @@ export const MenuButton = styled.button`
     }
 
     //Mostra o menu do tipo list quando o tamanho da tela for menor que 830px
-    @media(max-width: 830px) {
+    @media(max-width: 869px) {
         display: flex;
     }
 `

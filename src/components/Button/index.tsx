@@ -1,5 +1,4 @@
 import { ButtonContainer } from "./styles";
-import { IconContext, WhatsappLogo } from 'phosphor-react';
 
 interface ButtonProps {
     iconExists: boolean;

@@ -27,7 +27,7 @@ export const ButtonContainer = styled.button`
     }
 
      // Esconde o botão quando o tamanho da tela for menor que 830px
-     @media (max-width: 830px) {
+     @media (max-width: 870px) {
             display: none;
     }
 `
