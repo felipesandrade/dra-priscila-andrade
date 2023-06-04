@@ -11,8 +11,8 @@ import { Consultaion } from '../Consultation';
 import { Faq } from '../Faq';
 import { Treatment } from '../Treatment';
 
-import PhotoSlide1 from '../../src/assets/photo-slide-1.jpg';
-import PhotoSlide2 from '../../src/assets/photo-slide-2.jpg';
+import PhotoSlide1 from '../../assets/photo-slide-1.jpg';
+import PhotoSlide2 from '../../assets/photo-slide-2.jpg';
 
 export function Home() {
     return (
