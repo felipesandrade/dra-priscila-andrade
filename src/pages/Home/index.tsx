@@ -11,6 +11,9 @@ import { Consultaion } from '../Consultation';
 import { Faq } from '../Faq';
 import { Treatment } from '../Treatment';
 
+import PhotoSlide1 from '../../src/assets/photo-slide-1.jpg';
+import PhotoSlide2 from '../../src/assets/photo-slide-2.jpg';
+
 export function Home() {
     return (
             <HomeContainer>
@@ -18,7 +21,7 @@ export function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="../../src/assets/photo-slide-11.png"
+                            src={PhotoSlide1}
                             height = "475"
                             width = "1425"
                             alt="Primeiro slide"
@@ -40,7 +43,7 @@ export function Home() {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="../../src/assets/photo-slide-22.png"
+                        src={PhotoSlide2}
                         height = "475"
                         width = "1425"
                         alt="Segundo slide"
