@@ -4,9 +4,17 @@ import styled from 'styled-components';
 export const HeaderContainer = styled.header`
     height: 5.3rem;
     
+    background-color: ${(props) => props.theme['purple-300']}
+`
 
+export const HeaderContent = styled.div`
+    max-width: 1440px;
 
-    background-color: ${(props) => props.theme['purple-300']};
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     img {
         margin-left: 4em;
@@ -83,25 +91,20 @@ export const HeaderContainer = styled.header`
             .navigation-menu.expanded {
                 display: block;
             }
-
        }
 `
 
-export const HeaderContent = styled.div`
-    max-width: 1440px;
+export const MenuButton = styled.button`
+    width: 100%;
 
-    margin: 0 auto;
-    
+    margin-right: 4rem;
 
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-`
+    align-items: end;
+    justify-content: end;
 
-export const MenuButton = styled.button`
     border: 0;
-    padding: 1rem;
-    margin-right: 1rem;
+
     border-radius: 8px;
 
     display: none;

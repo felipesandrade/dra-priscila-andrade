@@ -3,24 +3,37 @@ import styled from 'styled-components';
 export const LocationContainer = styled.div`
     width: 100%;
 
+    height: 20rem;
+
+    background-color: ${(props) => props.theme['purple-300']};
+
+    //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
+    @media(max-width: 630px) {
+        height: auto;
+    }
+`
+
+export const LocationContent = styled.div`
+    max-width: 1440px;
+
+    margin: 0 auto;
+
+    padding: 3rem 1rem 5rem;
+
     display: flex;
     justify-content: space-between;
     position: relative;
     gap: 2rem;
-    height: 20rem;
 
-    padding: 2rem;
-
-    background-color: ${(props) => props.theme['purple-300']};
-
-     //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
-     @media(max-width: 630px) {
+    //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
+    @media(max-width: 630px) {
         flex-direction: column;
-        height: auto;
     }
 `
+
 export const Wrapper = styled.div`
     width: 100%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;

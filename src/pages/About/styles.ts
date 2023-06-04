@@ -69,7 +69,7 @@ export const DoctorContainer = styled.div`
 
     //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
     @media(max-width: 768px) {
-        font-size: 5vw;
+        /* font-size: 5vw; */
         line-height: 2rem;
         width: auto;
         height: auto;

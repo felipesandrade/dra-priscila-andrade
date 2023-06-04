@@ -18,7 +18,7 @@ export function Home() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="../../src/assets/photo-slide-1.jpg"
+                            src="../../src/assets/photo-slide-11.png"
                             height = "475"
                             width = "1425"
                             alt="Primeiro slide"
@@ -40,7 +40,7 @@ export function Home() {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="../../src/assets/photo-slide-2.jpg"
+                        src="../../src/assets/photo-slide-22.png"
                         height = "475"
                         width = "1425"
                         alt="Segundo slide"
