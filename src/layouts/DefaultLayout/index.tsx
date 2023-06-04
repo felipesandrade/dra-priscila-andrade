@@ -16,16 +16,17 @@ export function DefaultLayout() {
             {/* Renderiza as rotas e envia para o componente correto */}
             <Outlet />
             <Footer />
-            <WhatasappContainer>
-                <a href="https://bit.ly/rpriscila-reumato" target="_blank">
+            <a href="https://bit.ly/rpriscila-reumato" target="_blank">
+                <WhatasappContainer>
                     <WhatsappLogo size={35} weight="regular"/>
-                </a>   
-            </WhatasappContainer>
-            <BackToTop>
-                <Link activeClass="active" className="scrollLink" to="backtotop" smooth={true} spy={true} duration={250} title="Topo">
+                </WhatasappContainer>
+
+            </a>   
+            <Link activeClass="active" className="scrollLink" to="backtotop" smooth={true} spy={true} duration={250} title="Topo">
+                <BackToTop>
                     <ArrowCircleUp size={35} weight="regular"/>
-                </Link>  
-            </BackToTop>
+                </BackToTop>
+            </Link>  
         </LayoutContainer>
     )
 }

@@ -26,8 +26,14 @@ export const WhatasappContainer = styled.div`
 
     background-color: ${(props) => props.theme['green-200']};
 
-    a {
-        color: ${(props) => props.theme['white']};
+    color: ${(props) => props.theme['white']};
+
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+        transition: 0.3s;
+        background: ${(props) => props.theme['green-200']};
     }
 `
 
@@ -47,7 +53,13 @@ export const BackToTop = styled.div`
 
     background-color: ${(props) => props.theme['purple-700']};
 
-    a {
-        color: ${(props) => props.theme['white']};
+    color: ${(props) => props.theme['white']};
+    
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+        transition: 0.3s;
+        background: ${(props) => props.theme['purple-700']};
     }
 `
