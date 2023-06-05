@@ -51,7 +51,7 @@ export const BackToTop = styled.div`
 
     border-radius: 35%;
 
-    background-color: ${(props) => props.theme['gray-100']};
+    background-color: ${(props) => props.theme['purple-700']};
 
     color: ${(props) => props.theme['white']};
     
