@@ -32,7 +32,7 @@ export function About() {
                         </p>
                         <p>
                             <span>
-                                Acredito que a saude é o bem mais valioso que alguém pode ter, e é por isso
+                                Acredito que a saúde é o bem mais valioso que alguém pode ter, e é por isso
                                 que durante anos me preparei para fornecer um atendimento de primeira linha,
                                 focado no tratamento individualizado, feito com carinho e atenção.
                             </span>
@@ -41,7 +41,7 @@ export function About() {
                             <span>
                                 Durante a consulta, o objetivo é criar um ambiente acolhedor e amigável para que você 
                                 possa se sentir confortável e seguro para que juntos possamos escolher o tratamento 
-                                mais adequado a sua realida.
+                                mais adequado a sua realidade.
                             </span>
                         </p>
                     </DoctorContainer>
@@ -57,7 +57,7 @@ export function About() {
                     <SkillCard>
                         <header>
                             <CheckSquare size={32} weight="fill" />
-                            <strong>Residência em Clínica Médica pela Hospital Universitário Walter Cantídio</strong>
+                            <strong>Residência em Clínica Médica pelo Hospital Universitário Walter Cantídio</strong>
                         </header>
                     </SkillCard>
 

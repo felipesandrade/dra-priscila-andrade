@@ -35,7 +35,7 @@ export function Faq() {
                         </header>
                         <span>
                             Atualmente a consulta pode ser paga em dinheiro, pix e cartão de 
-                            crédito em até 3x com juros.
+                            crédito.
                         </span>
                     </FaqCard>
                     <FaqCard>
