@@ -5,7 +5,7 @@ export const LocationContainer = styled.div`
 
     height: 20rem;
 
-    border-top: 1px solid ${(props) => props.theme['purple-500']};
+    border-top: 1px solid ${(props) => props.theme['purple-200']};
 
     background-color: ${(props) => props.theme['purple-300']};
 

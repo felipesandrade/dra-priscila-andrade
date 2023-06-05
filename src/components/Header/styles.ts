@@ -14,7 +14,7 @@ export const HeaderContainer = styled.div`
     
     height: 5.3rem;
 
-    border-bottom: 1px solid ${(props) => props.theme['purple-500']};
+    border-bottom: 1px solid ${(props) => props.theme['purple-200']};
     
     background-color: ${(props) => props.theme['purple-300']};
 `

@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
     
     height: 4rem;
     
-    border-top: 1px solid ${(props) => props.theme['purple-500']};
+    border-top: 1px solid ${(props) => props.theme['purple-200']};
 `
 
 export const FooterContent = styled.div`
