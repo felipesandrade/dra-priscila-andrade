@@ -19,7 +19,7 @@ export const WhatasappContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    bottom: 90px;
+    bottom: 143px;
     right: 20px;
 
     border-radius: 35%;
@@ -46,7 +46,7 @@ export const BackToTop = styled.div`
     align-items: center;
     justify-content: center;
 
-    bottom: 15px;
+    bottom: 68px;
     right: 20px;
 
     border-radius: 35%;

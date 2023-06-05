@@ -37,6 +37,7 @@ export const SocialMedia = styled.div`
     }
 `
 export const Copyright = styled.div`
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
