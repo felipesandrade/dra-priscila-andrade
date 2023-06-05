@@ -47,7 +47,7 @@ export function Treatment(){
                 <Title>Por que procurar o reumatologista ?</Title>
                 <TextContent>
                     <span>
-                        A reumtologia é uma especialidade médica dedicada a investigação,
+                        A reumatologia é uma especialidade médica dedicada a investigação,
                         diagnóstico e tratamento de mais de 200 doenças diferentes que 
                         podem causar sintomas reumáticos.
                         Por padrão, essas doenças quase que inevitavelmente se apresentam 
