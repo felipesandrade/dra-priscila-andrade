@@ -29,6 +29,7 @@ export function Home() {
                         <Carousel.Caption>
                         <h3>Dra Rosa Priscila</h3>
                         <h5>Reumatologista</h5>
+                        <h1>+3.000 pacientes tratados.</h1>
                         <p>Juntos, buscando melhorar sua qualidade de vida.</p>
                         <Link activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={250} title="Sobre mim">
                             <SlideButton 

@@ -12,8 +12,24 @@ export const HomeContainer = styled.main`
 `
 export const CarouselContainer = styled(Carousel)`
     margin-bottom: 4rem;
+
     img {
         object-fit: cover;
+        /* opacity: 0.9; */
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        color: ${(props) => props.theme['green-100']};
+        font-weight: bold;
+    }
+
+    h3 {
+        color: ${(props) => props.theme['yellow-400']};
+        font-weight: bold;
     }
 `
 export const SlideButton = styled(Button)`
