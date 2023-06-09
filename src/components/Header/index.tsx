@@ -41,6 +41,7 @@ export function Header() {
                         <NavLink to="/" title="Início">
                             Início
                         </NavLink>
+                        <span hidden={location !== '' ? false : true}>
                         <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={500} href="#sobre" title="Sobre mim">
                             Sobre mim
                         </LinkScroll>
@@ -55,11 +56,12 @@ export function Header() {
                         </LinkScroll>
                         <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="location" smooth={true} spy={true} duration={500} href="#contato" title="Localização">
                             Contato
-                        </LinkScroll> 
-
-                        <LinkRouter to="/sobre" title="Sobre mim" id="linkrouter">
+                        </LinkScroll>
+                        </span>
+                        <span hidden={location === '' ? true : false}>
+                        <NavLink className="active" to="/sobre" title="Sobre mim" id="linkrouter">
                             Sobre mim
-                        </LinkRouter>
+                        </NavLink>
                         <NavLink to="/reumatologia" title="Sobre mim" id="linkrouter">
                             Reumatologia
                         </NavLink>
@@ -71,7 +73,8 @@ export function Header() {
                         </NavLink>
                         <NavLink to="/contato" title="Sobre mim" id="linkrouter">
                             Contato
-                        </NavLink>                               
+                        </NavLink>
+                        </span>                               
                     </nav>
                     <a href="https://bit.ly/rpriscila-reumato" target="_blank" title="Agende sua consulta">
                         <Button 
