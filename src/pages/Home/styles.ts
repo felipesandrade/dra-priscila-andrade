@@ -23,12 +23,12 @@ export const CarouselContainer = styled(Carousel)`
     }
 
     h1 {
-        color: ${(props) => props.theme['green-100']};
+        color: ${(props) => props.theme['blue-600']};
         font-weight: bold;
     }
 
     h3 {
-        color: ${(props) => props.theme['yellow-400']};
+        color: ${(props) => props.theme['green-100']};
         font-weight: bold;
     }
 `
