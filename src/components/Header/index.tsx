@@ -4,7 +4,8 @@ import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila.svg';
 
 import { 
         NavLink,
-        useLocation
+        useLocation,
+        Link as LinkRouter
        } from 'react-router-dom';
 import {   
         Element, 
@@ -60,9 +61,9 @@ export function Header() {
                             </span>
                         {/* ) : (  */}
                             <span hidden={location === '' ? true : false}>
-                                <NavLink to="/sobre" title="Sobre mim">
+                                <LinkRouter to="/sobre" title="Sobre mim" className={act}>
                                     Sobre mim
-                                </NavLink>
+                                </LinkRouter>
                                 <NavLink to="/reumatologia" title="Sobre mim">
                                     Reumatologia
                                 </NavLink>
