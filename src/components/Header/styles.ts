@@ -36,12 +36,10 @@ export const HeaderContent = styled.header`
         display: flex;
         gap: 2rem;
 
-        span {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
+        #linkrouter {
+            display: none;
         }
+
         a, .scroll {
             display: flex;
             justify-content: center;
