@@ -61,7 +61,7 @@ export function Header() {
                             </span>
                         {/* ) : (  */}
                             <span hidden={location === '' ? true : false}>
-                                <LinkRouter to="/sobre" title="Sobre mim" className={act}>
+                                <LinkRouter to="/sobre" title="Sobre mim">
                                     Sobre mim
                                 </LinkRouter>
                                 <NavLink to="/reumatologia" title="Sobre mim">
