@@ -11,12 +11,12 @@ import {
     TreatmentCard
     } from "./styles";
 
-import arthritis from '../../assets/arthritis.jpg';
-import arthrosis from '../../assets/arthrosis.jpg';
-import fibromyalgia from '../../assets/fibromyalgia.jpg';
-import gout from '../../assets/gout.jpeg';
-import psoriasis from '../../assets/psoriasis.jpg';
-import spondylitis from '../../assets/ankylosing-spondylitis.jpg';
+import arthritis from '../../assets/arthritis.webp';
+import arthrosis from '../../assets/arthrosis.webp';
+import fibromyalgia from '../../assets/fibromyalgia.webp';
+import gout from '../../assets/gout.webp';
+import psoriasis from '../../assets/psoriasis.webp';
+import spondylitis from '../../assets/ankylosing-spondylitis.webp';
 
 export function Treatment(){
     const responsive = {

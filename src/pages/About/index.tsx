@@ -7,7 +7,7 @@ import { AboutContainer,
          SkillsContainer, 
          Title } from "./styles";
 import { CheckSquare } from 'phosphor-react';
-import Photo from '../../assets/img-dra-rosa-priscila-principal.png';
+import Photo from '../../assets/img-dra-rosa-priscila-principal.webp';
 
 export function About() {
     return (

@@ -13,9 +13,9 @@ export function Router() {
         <Routes>
             <Route path="/" element={<DefaultLayout />}>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/treatement" element={<Treatment />} />
-                <Route path="/consultation" element={<Consultaion />} />
+                <Route path="/sobre" element={<About />} />
+                <Route path="/reumatologia" element={<Treatment />} />
+                <Route path="/consulta" element={<Consultaion />} />
                 <Route path="/faq" element={<Faq />} />
                 <Route path="/contato" element={<Location />} />
             </Route>

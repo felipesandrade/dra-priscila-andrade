@@ -75,7 +75,7 @@ export const HeaderContent = styled.header`
         nav {
             gap: 1rem;
                 a {
-                    font-size: 0.875rem;
+                    font-size: 1rem;
                 }
             }
     }
@@ -123,6 +123,11 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    img {
+        width: 220px;
+        height: 80px;
+    }
         
     @media (max-width: 869px) {
         width: 100%;

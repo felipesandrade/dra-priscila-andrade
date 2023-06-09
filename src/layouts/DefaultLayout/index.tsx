@@ -16,7 +16,7 @@ export function DefaultLayout() {
             {/* Renderiza as rotas e envia para o componente correto */}
             <Outlet />
             <Footer />
-            <a href="https://bit.ly/rpriscila-reumato" target="_blank">
+            <a href="https://bit.ly/rpriscila-reumato" target="_blank" title="Agende sua consulta">
                 <WhatasappContainer>
                     <WhatsappLogo size={35} weight="regular"/>
                 </WhatasappContainer>

@@ -53,6 +53,8 @@ export const Content = styled.div`
 
 export const ImageContainer = styled.div`
     img {
+        width: 300px;
+        height: 400px;
         max-width: 400px;
         max-height: 400px;
         object-fit: cover;
