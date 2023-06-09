@@ -42,7 +42,7 @@ export function Header() {
                             Início
                         </NavLink>
                         {/* {location === '' ? ( */}
-                            <span hidden={location !== '' ? true : false}>
+                            {/* <span hidden={location !== '' ? true : false}> */}
                                 <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={500} href="#sobre" title="Sobre mim">
                                     Sobre mim
                                 </LinkScroll>
@@ -58,12 +58,12 @@ export function Header() {
                                 <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="location" smooth={true} spy={true} duration={500} href="#contato" title="Localização">
                                     Contato
                                 </LinkScroll>
-                            </span>
+                            {/* </span> */}
                         {/* ) : (  */}
-                            <span hidden={location === '' ? true : false}>
-                                <LinkRouter to="/sobre" title="Sobre mim">
+                            {/* <span hidden={location === '' ? true : false}> */}
+                                <NavLink to="/sobre" title="Sobre mim">
                                     Sobre mim
-                                </LinkRouter>
+                                </NavLink>
                                 <NavLink to="/reumatologia" title="Sobre mim">
                                     Reumatologia
                                 </NavLink>
@@ -76,7 +76,7 @@ export function Header() {
                                 <NavLink to="/contato" title="Sobre mim">
                                     Contato
                                 </NavLink>
-                            </span>
+                            {/* </span> */}
                         {/* )} */}
                     </nav>
                     <a href="https://bit.ly/rpriscila-reumato" target="_blank" title="Agende sua consulta">
