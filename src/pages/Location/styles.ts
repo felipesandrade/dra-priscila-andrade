@@ -20,7 +20,7 @@ export const LocationContent = styled.div`
 
     margin: 0 auto;
 
-    padding: 3rem 1rem 5rem;
+    padding: 1rem 1rem 5rem;
 
     display: flex;
     justify-content: space-between;
