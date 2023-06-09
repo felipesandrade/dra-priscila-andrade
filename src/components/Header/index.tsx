@@ -38,9 +38,6 @@ export function Header() {
                         <NavLink to="/" title="Início">
                             Início
                         </NavLink>
-                        <NavLink to="/sobre" title="Início">
-                            Sobre mim
-                        </NavLink>
                         <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={500} href="#sobre" title="Sobre mim">
                             Sobre mim
                         </LinkScroll>
