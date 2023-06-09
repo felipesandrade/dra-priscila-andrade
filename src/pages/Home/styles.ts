@@ -19,7 +19,7 @@ export const CarouselContainer = styled(Carousel)`
     }
 
     p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     h1 {
