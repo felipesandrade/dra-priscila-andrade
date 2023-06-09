@@ -31,7 +31,7 @@ export function Home() {
                         <p>Reumatologista</p>
                         <h1>+3.000 pacientes tratados.</h1>
                         <p>Juntos, buscando melhorar sua qualidade de vida.</p>
-                        <Link activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={250} href="/sobre"title="Sobre mim">
+                        <Link activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={250} href="#sobre"title="Sobre mim">
                             <SlideButton 
                                 iconExists={false}
                                 className
@@ -53,7 +53,7 @@ export function Home() {
                         <Carousel.Caption>
                         <h3>O que é Reumatologia?</h3>
                         <p>Área da medicina destinada ao diagnóstico e tratamento das doenças do aparelho locomotor.</p>
-                        <Link activeClass="active" className="scrollLink" to="treatment" smooth={true} spy={true} duration={250} href="/reumatologia" title="Reumatologia">
+                        <Link activeClass="active" className="scrollLink" to="treatment" smooth={true} spy={true} duration={250} href="#reumatologia" title="Reumatologia">
                             <SlideButton
                                 iconExists={false}
                                 className

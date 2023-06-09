@@ -29,24 +29,22 @@ export function Header() {
                                     isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
                                 }
                     >
-                        <NavLink to="/" title="Início">
+                        <NavLink hidden={true} to="/sobre" title="Início">
                             Início
                         </NavLink>
-                        <NavLink to="/sobre" title="Início">
-                            <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={250} title="Sobre mim">
+                        <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={250} href="#sobre" title="Sobre mim">
                                 Sobre mim
-                            </Link>
-                        </NavLink>
-                        <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="treatment" smooth={true} spy={true} duration={250} href="/reumatologia" title="Reumatologia">
+                        </Link>
+                        <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="treatment" smooth={true} spy={true} duration={250} href="#reumatologia" title="Reumatologia">
                             Reumatologia
                         </Link>
-                        <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="consultation" smooth={true} spy={true} duration={250} href="/consulta" title="Vantagens Consulta Particular">
+                        <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="consultation" smooth={true} spy={true} duration={250} href="#consulta" title="Vantagens Consulta Particular">
                             Consulta
                         </Link>
-                        <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="faq" smooth={true} spy={true} duration={250} href="/faq" title="Dúvidas">
+                        <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="faq" smooth={true} spy={true} duration={250} href="#faq" title="Dúvidas">
                             Dúvidas
                         </Link>
-                        <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="location" smooth={true} spy={true} duration={250} href="/contato" title="Localização">
+                        <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="location" smooth={true} spy={true} duration={250} href="#contato" title="Localização">
                             Contato
                         </Link> 
                     </nav>
