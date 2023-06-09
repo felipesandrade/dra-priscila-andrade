@@ -7,9 +7,7 @@ export const LocationContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    height: 40rem;
-    
-    /* border-top: 1px solid ${(props) => props.theme['purple-200']}; */
+    height:30rem;
 
     background-color: ${(props) => props.theme['purple-300']};
 
@@ -85,7 +83,7 @@ export const Adress = styled.div`
 
         list-style: none;
 
-        color: ${(props) => props.theme['purple-500']};
+        color: ${(props) => props.theme['blue-600']};
     }
 `
 

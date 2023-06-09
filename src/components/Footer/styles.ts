@@ -4,16 +4,8 @@ export const FooterContainer = styled.footer`
     width: 100%;
     
     height: 4rem;
-
-    margin: auto;
-
-    bottom: 0;
-
-    position: fixed;
     
     border-top: 1px solid ${(props) => props.theme['purple-200']};
-
-    background-color: ${(props) => props.theme['gray-50']};
 `
 
 export const FooterContent = styled.div`

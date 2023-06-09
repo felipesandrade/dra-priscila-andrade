@@ -35,13 +35,6 @@ export const HeaderContent = styled.header`
     nav {
         display: flex;
         gap: 2rem;
-
-        span {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-        }
         
         a, .scroll {
             display: flex;

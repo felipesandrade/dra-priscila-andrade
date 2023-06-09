@@ -17,9 +17,6 @@ import { Button } from "../Button";
 import { useState } from "react";
 
 export function Header() {
-    const path = useLocation().pathname;
-    const location = path.split('/')[1];
-
     const [isNavExpanded, setIsNavExpanded] = useState(false);
 
     return (
@@ -41,7 +38,9 @@ export function Header() {
                         <NavLink to="/" title="Início">
                             Início
                         </NavLink>
-                        <span hidden={location !== '' ? false : true}>
+                        <NavLink to="/sobre" title="Início">
+                            Sobre mim
+                        </NavLink>
                         <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={500} href="#sobre" title="Sobre mim">
                             Sobre mim
                         </LinkScroll>
@@ -56,25 +55,7 @@ export function Header() {
                         </LinkScroll>
                         <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="location" smooth={true} spy={true} duration={500} href="#contato" title="Localização">
                             Contato
-                        </LinkScroll>
-                        </span>
-                        <span hidden={location === '' ? true : false}>
-                        <NavLink className="active" to="/sobre" title="Sobre mim" id="linkrouter">
-                            Sobre mim
-                        </NavLink>
-                        <NavLink to="/reumatologia" title="Sobre mim" id="linkrouter">
-                            Reumatologia
-                        </NavLink>
-                        <NavLink to="/consulta" title="Sobre mim" id="linkrouter"> 
-                            Consulta
-                        </NavLink>
-                        <NavLink to="/faq" title="Sobre mim" id="linkrouter">
-                            Dúvidas
-                        </NavLink>
-                        <NavLink to="/contato" title="Sobre mim" id="linkrouter">
-                            Contato
-                        </NavLink>
-                        </span>                               
+                        </LinkScroll>                             
                     </nav>
                     <a href="https://bit.ly/rpriscila-reumato" target="_blank" title="Agende sua consulta">
                         <Button 
