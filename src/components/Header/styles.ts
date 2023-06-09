@@ -36,6 +36,12 @@ export const HeaderContent = styled.header`
         display: flex;
         gap: 2rem;
 
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
         a, .scroll {
             display: flex;
             justify-content: center;

@@ -3,9 +3,13 @@ import styled from 'styled-components';
 export const LocationContainer = styled.div`
     width: 100%;
 
-    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    border-top: 1px solid ${(props) => props.theme['purple-200']};
+    height: 40rem;
+    
+    /* border-top: 1px solid ${(props) => props.theme['purple-200']}; */
 
     background-color: ${(props) => props.theme['purple-300']};
 
@@ -16,6 +20,7 @@ export const LocationContainer = styled.div`
 `
 
 export const LocationContent = styled.div`
+    width: 100%;
     max-width: 1440px;
 
     margin: 0 auto;
@@ -156,6 +161,8 @@ export const WhatsApp = styled.div`
 
 export const Map = styled.div`
     width: 100%;
+    height: 300px;
+    
     iframe {
         border-radius: 8px;
     }

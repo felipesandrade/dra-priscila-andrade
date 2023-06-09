@@ -40,8 +40,8 @@ export function Header() {
                         <NavLink to="/" title="Início">
                             Início
                         </NavLink>
-                        {location === '' ? (
-                            <>
+                        {/* {location === '' ? ( */}
+                            <span hidden={location !== '' ? true : false}>
                                 <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={500} href="#sobre" title="Sobre mim">
                                     Sobre mim
                                 </LinkScroll>
@@ -57,9 +57,9 @@ export function Header() {
                                 <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="location" smooth={true} spy={true} duration={500} href="#contato" title="Localização">
                                     Contato
                                 </LinkScroll>
-                            </>
-                        ) : ( 
-                            <>
+                            </span>
+                        {/* ) : (  */}
+                            <span hidden={location === '' ? true : false}>
                                 <NavLink to="/sobre" title="Sobre mim">
                                     Sobre mim
                                 </NavLink>
@@ -75,8 +75,8 @@ export function Header() {
                                 <NavLink to="/contato" title="Sobre mim">
                                     Contato
                                 </NavLink>
-                            </>
-                        )}
+                            </span>
+                        {/* )} */}
                     </nav>
                     <a href="https://bit.ly/rpriscila-reumato" target="_blank" title="Agende sua consulta">
                         <Button 
