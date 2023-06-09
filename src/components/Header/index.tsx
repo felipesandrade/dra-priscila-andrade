@@ -29,7 +29,7 @@ export function Header() {
                                     isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
                                 }
                     >
-                        <NavLink hidden={true} to="/sobre" title="Início">
+                        <NavLink to="/sobre" title="Início">
                             Início
                         </NavLink>
                         <Link onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={250} href="#sobre" title="Sobre mim">
