@@ -18,7 +18,7 @@ export function Header() {
             <HeaderContainer>
                 <HeaderContent>
                     <Wrapper>
-                        <NavLink to="/" title="Início">
+                        <NavLink to="/contato" title="Início">
                             <img src={logoDraRosaPriscila} alt="Nome da médica com fonte"/>
                         </NavLink>
                         <MenuButton title="Botão menu">
