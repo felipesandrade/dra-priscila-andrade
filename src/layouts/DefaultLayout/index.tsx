@@ -22,7 +22,7 @@ export function DefaultLayout() {
                 </WhatasappContainer>
 
             </a>   
-            <Link activeClass="active" className="scrollLink" to="backtotop" smooth={true} spy={true} duration={250} title="Topo">
+            <Link activeClass="active" className="scrollLink" to="backtotop" smooth={true} spy={true} duration={250} href="/" title="Topo">
                 <BackToTop>
                     <ArrowCircleUp size={35} weight="regular"/>
                 </BackToTop>

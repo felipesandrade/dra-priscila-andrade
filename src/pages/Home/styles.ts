@@ -20,6 +20,7 @@ export const CarouselContainer = styled(Carousel)`
 
     p {
         font-size: 1.1rem;
+        font-weight: bold;
     }
 
     h1 {
