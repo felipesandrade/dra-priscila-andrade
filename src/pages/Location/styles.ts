@@ -157,6 +157,10 @@ export const WhatsApp = styled.div`
     }
 `
 
+export const Doctoralia = styled.div`
+    width: 100%;
+`
+
 export const Map = styled.div`
     width: 100%;
     height: 300px;

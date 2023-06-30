@@ -1,5 +1,6 @@
 import { 
     Adress, 
+    Doctoralia,
     LocationContainer, 
     LocationContent, 
     Map, 
@@ -14,9 +15,6 @@ import {
     
 import { Element } from 'react-scroll';
     
-
-
-
 export function Location() {
     return (
         <Element name="location">
@@ -43,6 +41,21 @@ export function Location() {
                         <span><a href="https://bit.ly/rpriscila-reumato" target="_blank" >(85) 99273.2713</a></span>
                     </Phone>
                 </Wrapper>
+                <Doctoralia>
+                    <a 
+                        id="zl-url" 
+                        className="zl-url" 
+                        href="https://www.doctoralia.com.br/rosa-priscila-oliveira-monte-andrade/reumatologista/fortaleza" 
+                        rel="nofollow" 
+                        data-zlw-doctor="rosa-priscila-oliveira-monte-andrade" 
+                        data-zlw-type="big_with_calendar" 
+                        data-zlw-opinion="false" 
+                        data-zlw-hide-branding="true"
+                        target="_blank"
+                    >
+                        Rosa Priscila Oliveira Monte Andrade - Doctoralia.com.br
+                    </a>
+                </Doctoralia>
                 <Map>
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3267848716414!2d-38.51512832625158!3d-3.73879144322252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748f135b6108b%3A0x63ee18e8a2f2d9d4!2sBiomed!5e0!3m2!1spt-BR!2sbr!4v1681582520112!5m2!1spt-BR!2sbr" 
