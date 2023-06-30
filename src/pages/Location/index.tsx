@@ -12,10 +12,25 @@ import {
     MapPin,
     PhoneCall, 
     WhatsappLogo } from 'phosphor-react';
+
+import { useEffect } from "react";
     
 import { Element } from 'react-scroll';
     
 export function Location() {
+
+    // Loading Doctoralia Widget
+    useEffect(() => {
+        const script = document.createElement('script');
+
+        script.src = "http://platform.docplanner.com/js/widget.js";
+        script.async = true;
+
+        return() => {
+            document.body.appendChild(script);
+        }
+    }, []);
+
     return (
         <Element name="location">
         <LocationContainer>
@@ -48,8 +63,8 @@ export function Location() {
                         href="https://www.doctoralia.com.br/rosa-priscila-oliveira-monte-andrade/reumatologista/fortaleza" 
                         rel="nofollow" 
                         data-zlw-doctor="rosa-priscila-oliveira-monte-andrade" 
-                        data-zlw-type="big_with_calendar" 
-                        data-zlw-opinion="false" 
+                        data-zlw-type="big" 
+                        data-zlw-opinion="true" 
                         data-zlw-hide-branding="true"
                         target="_blank"
                     >

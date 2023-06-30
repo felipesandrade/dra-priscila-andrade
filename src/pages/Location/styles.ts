@@ -7,7 +7,7 @@ export const LocationContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    height:30rem;
+    height: 30rem;
 
     background-color: ${(props) => props.theme['purple-300']};
 
@@ -163,7 +163,7 @@ export const Doctoralia = styled.div`
 
 export const Map = styled.div`
     width: 100%;
-    height: 300px;
+    height: 350px;
     
     iframe {
         border-radius: 8px;
