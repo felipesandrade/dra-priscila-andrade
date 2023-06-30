@@ -23,11 +23,13 @@ export function Location() {
     useEffect(() => {
         const script = document.createElement('script');
 
-        script.src = "http://platform.docplanner.com/js/widget.js";
+        script.src = "https://platform.docplanner.com/js/widget.js";
         script.async = true;
 
+        document.body.appendChild(script);
+
         return() => {
-            document.body.appendChild(script);
+            document.body.removeChild(script);
         }
     }, []);
 
