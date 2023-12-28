@@ -163,7 +163,6 @@ export const Doctoralia = styled.div`
 
 export const Map = styled.div`
     width: 100%;
-    height: 650px;
     
     iframe {
         border-radius:  8px;
