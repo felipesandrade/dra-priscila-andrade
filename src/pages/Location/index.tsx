@@ -40,18 +40,22 @@ export function Location() {
                 <Wrapper>
                     <TitleAdress>
                         <MapPin size={30} weight="fill" />
-                        <span>Clínica BIOMED</span>
+                        <span>Clínica FFAZ Saúde Integrada</span>
                     </TitleAdress>
                     <Adress>
                         <ul>  
-                            <li>Rua Carlos Vasconcelos, 1921, Aldeota</li>
+                            <li>Rua Monsenhor Bruno, 1906, Aldeota</li>
                             <li>Fortaleza - CE</li>
-                            <li>CEP: 60.115-171</li>
+                            <li>CEP: 60.115-191</li>
                         </ul>
                     </Adress>
                     <Phone>
                         <PhoneCall size={30} weight="fill" />
-                        <span><a href="tel:8532243533">(85) 3224.3533</a></span>
+                        <span><a href="tel:8530852579">(85) 3085.2579</a></span>
+                    </Phone>
+                    <Phone>
+                        <WhatsappLogo size={30} weight="fill" />
+                        <span><a href="https://bit.ly/clinica-ffaz" target="_blank" >(85) 98616.1228</a></span>
                     </Phone>
                     <Phone>
                         <WhatsappLogo size={30} weight="fill" />
@@ -75,13 +79,12 @@ export function Location() {
                 </Doctoralia>
                 <Map>
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3267848716414!2d-38.51512832625158!3d-3.73879144322252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748f135b6108b%3A0x63ee18e8a2f2d9d4!2sBiomed!5e0!3m2!1spt-BR!2sbr!4v1681582520112!5m2!1spt-BR!2sbr" 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15925.293789056599!2d-38.5118398!3d-3.7395264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748f15190654b%3A0xac92ebd747168176!2sCl%C3%ADnica%20FFAZ%20Sa%C3%BAde%20Integrada!5e0!3m2!1spt-BR!2sbr!4v1703792786468!5m2!1spt-BR!2sbr" 
                         width="100%" 
-                        height="100%"
-                        title="Endereço Biomed"
+                        height="100%" 
                         style={{ border: 0 }} 
-                        loading="lazy"
-                        allowFullScreen
+                        allowFullScreen 
+                        loading="lazy" 
                         referrerPolicy="no-referrer-when-downgrade"
                     />
                 </Map>
