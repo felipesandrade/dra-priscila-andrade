@@ -71,6 +71,10 @@ export const TitleAdress = styled.div`
 
 `
 export const Adress = styled.div`
+    ul {
+        padding-left: 0;
+        margin: 0.5rem;
+    }
 
     li {
         font-family: 'Roboto', sans-serif;
@@ -83,7 +87,7 @@ export const Adress = styled.div`
 
         list-style: none;
 
-        color: ${(props) => props.theme['blue-600']};
+        color: ${(props) => props.theme['blue-600']}; 
     }
 `
 
@@ -172,6 +176,17 @@ export const Map = styled.div`
     @media(max-width: 630px) {
         height: 350px;
         margin-left: 1rem;
+    }
+`
+
+export const ImageContainer = styled.div`
+    margin: 0.5rem;
+
+    img {
+        width: 150px;
+        height: 150px;
+        max-width: 400px;
+        max-height: 400px;
     }
 `
 

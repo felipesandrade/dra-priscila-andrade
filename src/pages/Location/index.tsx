@@ -1,6 +1,7 @@
 import { 
     Adress, 
     Doctoralia,
+    ImageContainer,
     LocationContainer, 
     LocationContent, 
     Map, 
@@ -16,6 +17,8 @@ import {
 import { useEffect } from "react";
     
 import { Element } from 'react-scroll';
+
+import Photo from '../../assets/logo-clinica-ffaz-saude.png'
     
 export function Location() {
 
@@ -38,10 +41,13 @@ export function Location() {
         <LocationContainer>
             <LocationContent>
                 <Wrapper>
-                    <TitleAdress>
+                    <ImageContainer>
+                        <img src={Photo} title="Logo da Clínica FFAZ Saúde Integrada" alt="Logo da Clínica FFAZ Saúde Integrada" />
+                    </ImageContainer>
+                    {/* <TitleAdress>
                         <MapPin size={30} weight="fill" />
                         <span>Clínica FFAZ Saúde Integrada</span>
-                    </TitleAdress>
+                    </TitleAdress> */}
                     <Adress>
                         <ul>  
                             <li>Rua Monsenhor Bruno, 1906, Aldeota</li>
@@ -57,10 +63,10 @@ export function Location() {
                         <WhatsappLogo size={30} weight="fill" />
                         <span><a href="https://bit.ly/clinica-ffaz" target="_blank" >(85) 98616.1228</a></span>
                     </Phone>
-                    <Phone>
+                    {/* <Phone>
                         <WhatsappLogo size={30} weight="fill" />
                         <span><a href="https://bit.ly/rpriscila-reumato" target="_blank" >(85) 99273.2713</a></span>
-                    </Phone>
+                    </Phone> */}
                 </Wrapper>
                 <Map>
                     <iframe 
