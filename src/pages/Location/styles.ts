@@ -185,8 +185,8 @@ export const ImageContainer = styled.div`
     img {
         width: 150px;
         height: 150px;
-        max-width: 400px;
-        max-height: 400px;
+        //max-width: 400px;
+        //max-height: 400px;
     }
 `
 
