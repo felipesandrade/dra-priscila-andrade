@@ -16,6 +16,7 @@ import PhotoSlide1 from '../../assets/photo-slide-1.webp';
 import PhotoSlide2 from '../../assets/photo-slide-2.webp';
 
 export function Home() {
+
     return (
             <HomeContainer>
                 <CarouselContainer>

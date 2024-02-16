@@ -18,7 +18,7 @@ export function Router() {
                 <Route path="/reumatologia" element={<Treatment />} />
                 <Route path="/consulta" element={<Consultaion />} />
                 <Route path="/faq" element={<Faq />} />
-                <Route path="/contato" element={<Review />} />
+                <Route path="/avaliacao" element={<Review />} />
                 <Route path="/contato" element={<Location />} />
             </Route>
         </Routes>

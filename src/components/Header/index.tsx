@@ -50,6 +50,9 @@ export function Header() {
                         <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="faq" smooth={true} spy={true} duration={500} href="#faq" title="Dúvidas">
                             Dúvidas
                         </LinkScroll>
+                        <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="reviews" smooth={true} spy={true} duration={500} href="#avaliacao" title="Avaliação">
+                            Avaliação
+                        </LinkScroll>   
                         <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="location" smooth={true} spy={true} duration={500} href="#contato" title="Localização">
                             Contato
                         </LinkScroll>                             
