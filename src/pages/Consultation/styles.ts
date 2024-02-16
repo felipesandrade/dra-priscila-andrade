@@ -17,7 +17,7 @@ export const Title = styled.h1`
 
     padding-bottom: 2rem;
 
-    color: ${(props) => props.theme['purple-700']};
+    color: ${(props) => props.theme['rose-gold-700']};
 `
 
 export const BeneftisContent = styled.div`
@@ -44,7 +44,7 @@ export const BenefitCard = styled.div`
     text-align: center;
 
     color: ${(props) => props.theme['gray-500']};
-    background: ${(props) => props.theme['purple-300']};
+    background: ${(props) => props.theme['rose-gold-300']};
 
     border-radius: 8px;
     padding: 2rem;
@@ -53,7 +53,7 @@ export const BenefitCard = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        color: ${(props) => props.theme['purple-700']};
+        color: ${(props) => props.theme['rose-gold-700']};
     }
 
     strong {

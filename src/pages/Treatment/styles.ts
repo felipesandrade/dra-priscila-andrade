@@ -18,7 +18,7 @@ export const Title = styled.h1`
 
     padding-bottom: 2rem;
 
-    color: ${(props) => props.theme['purple-700']};
+    color: ${(props) => props.theme['rose-gold-700']};
 `
 
 export const TextContent = styled.div`

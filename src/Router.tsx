@@ -7,6 +7,7 @@ import { Location } from './pages/Location';
 import { Treatment } from './pages/Treatment';
 import { Consultaion } from './pages/Consultation';
 import { Faq } from './pages/Faq';
+import { Review } from './pages/Reviews';
 
 export function Router() {
     return (
@@ -17,6 +18,7 @@ export function Router() {
                 <Route path="/reumatologia" element={<Treatment />} />
                 <Route path="/consulta" element={<Consultaion />} />
                 <Route path="/faq" element={<Faq />} />
+                <Route path="/contato" element={<Review />} />
                 <Route path="/contato" element={<Location />} />
             </Route>
         </Routes>

@@ -30,7 +30,7 @@ export const Title = styled.h1`
     font-weight: 600;
     text-align: center;
     
-    color: ${(props) => props.theme['purple-700']};
+    color: ${(props) => props.theme['rose-gold-700']};
 `
 
 export const Content = styled.div`
@@ -98,7 +98,7 @@ export const SkillCard = styled.div`
 
     padding: 1.5rem;
 
-    background: ${(props) => props.theme['purple-300']};
+    background: ${(props) => props.theme['rose-gold-300']};
 
     header {
         display: flex;
@@ -109,7 +109,7 @@ export const SkillCard = styled.div`
 
         svg {
             min-width: 32px;
-            color: ${(props) => props.theme['purple-700']};
+            color: ${(props) => props.theme['rose-gold-700']};
         }
     }
 

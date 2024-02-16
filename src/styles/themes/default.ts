@@ -15,6 +15,7 @@ export const defaultTheme = {
     'aqua-green-200': '#56b6c4',
     'aqua-green-300': '#24cbc7',
     'aqua-green-400': '#07889b',
+    'aqua-green-500': '#489186',
 
     'green-100': '#88d317',
     'green-150': '#61CE70',
@@ -30,8 +31,14 @@ export const defaultTheme = {
     'purple-300': '#f2eefc',
     'purple-500': '#a383ec',
     'purple-700': '#8664db',
-  
-  
+
+    'rose-gold-50': '#f4e6e7',
+    'rose-gold-100': '#B76E79',
+    'rose-gold-200': '#C58B93',
+    'rose-gold-300': '#f4e6e7',
+    'rose-gold-500': '#BE7C86',
+    'rose-gold-700': '#B76E79',
+    
     'red-500': '#AB222E',
     'red-700': '#7A1921',
   

@@ -14,9 +14,9 @@ export const HeaderContainer = styled.div`
     
     height: 5.3rem;
 
-    border-bottom: 1px solid ${(props) => props.theme['purple-200']};
+    /* border-bottom: 1px solid ${(props) => props.theme['rose-gold-200']}; */
     
-    background-color: ${(props) => props.theme['purple-300']};
+    background-color: ${(props) => props.theme['rose-gold-300']};
 `
 
 export const HeaderContent = styled.header`
@@ -47,17 +47,17 @@ export const HeaderContent = styled.header`
             font-weight: bold;
             cursor: pointer;
 
-            color: ${(props) => props.theme['purple-500']};
+            color: ${(props) => props.theme['rose-gold-500']};
 
             &:hover {
-                color: ${(props) => props.theme['purple-700']};
+                color: ${(props) => props.theme['rose-gold-700']};
                 border-bottom: 3px solid;
                 padding-block: 1.8rem;
                 transition: 0.3s;
             }
 
             &.active {    
-                color: ${(props) => props.theme['purple-700']};
+                color: ${(props) => props.theme['rose-gold-700']};
             }
 
         }
@@ -126,7 +126,7 @@ export const Wrapper = styled.div`
 
     img {
         width: 220px;
-        height: 80px;
+        height: 70px;
     }
         
     @media (max-width: 869px) {
@@ -142,8 +142,8 @@ export const MenuButton = styled.button`
     display: none;
     transition: background-color 0.2s ease-in-out;
 
-    background-color: ${(props) => props.theme['purple-300']};
-    color: ${(props) => props.theme['purple-700']};
+    background-color: ${(props) => props.theme['rose-gold-300']};
+    color: ${(props) => props.theme['rose-gold-700']};
 
     font-weight: bold;
 
@@ -152,7 +152,7 @@ export const MenuButton = styled.button`
     &:hover {
         transition: 0.3s;
         color: ${(props) => props.theme['white']};
-        background: ${(props) => props.theme['purple-700']};
+        background: ${(props) => props.theme['rose-gold-700']};
     }
 
     //Mostra o menu do tipo list quando o tamanho da tela for menor que 830px

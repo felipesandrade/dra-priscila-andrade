@@ -51,7 +51,7 @@ export const BackToTop = styled.div`
 
     border-radius: 35%;
 
-    background-color: ${(props) => props.theme['purple-700']};
+    background-color: ${(props) => props.theme['rose-gold-700']};
 
     color: ${(props) => props.theme['white']};
     
@@ -60,6 +60,6 @@ export const BackToTop = styled.div`
     &:hover {
         opacity: 0.9;
         transition: 0.3s;
-        background: ${(props) => props.theme['purple-700']};
+        background: ${(props) => props.theme['rose-gold-700']};
     }
 `

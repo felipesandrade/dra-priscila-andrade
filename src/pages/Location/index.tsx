@@ -18,7 +18,7 @@ import { useEffect } from "react";
     
 import { Element } from 'react-scroll';
 
-import Photo from '../../assets/logo-clinica-ffaz-saude.png'
+import Photo from '../../assets/logo-clinica-ffaz-saude.svg'
     
 export function Location() {
 

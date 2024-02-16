@@ -10,6 +10,7 @@ import { About } from '../About';
 import { Consultaion } from '../Consultation';
 import { Faq } from '../Faq';
 import { Treatment } from '../Treatment';
+import { Review } from '../Reviews';
 
 import PhotoSlide1 from '../../assets/photo-slide-1.webp';
 import PhotoSlide2 from '../../assets/photo-slide-2.webp';
@@ -67,6 +68,7 @@ export function Home() {
                 <Treatment />
                 <Consultaion />
                 <Faq />
+                <Review />
                 <Location />
             </HomeContainer>
     )

@@ -9,7 +9,7 @@ export const LocationContainer = styled.div`
 
     height: 50rem;
 
-    background-color: ${(props) => props.theme['purple-300']};
+    background-color: ${(props) => props.theme['rose-gold-300']};
 
     //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
     @media(max-width: 630px) {
@@ -55,7 +55,7 @@ export const TitleAdress = styled.div`
     gap: 0.5rem;
 
     svg {
-        color: ${(props) => props.theme['purple-700']};
+        color: ${(props) => props.theme['rose-gold-700']};
     }
 
     span {
@@ -66,7 +66,7 @@ export const TitleAdress = styled.div`
 
         text-align: center;
 
-        color: ${(props) => props.theme['purple-700']}
+        color: ${(props) => props.theme['rose-gold-700']}
     }
 
 `
@@ -87,7 +87,7 @@ export const Adress = styled.div`
 
         list-style: none;
 
-        color: ${(props) => props.theme['blue-600']}; 
+        color: ${(props) => props.theme['rose-gold-700']}; 
     }
 `
 
@@ -98,7 +98,7 @@ export const Phone = styled.div`
     gap: 0.5rem;
 
     svg {
-        color: ${(props) => props.theme['purple-700']};
+        color: ${(props) => props.theme['rose-gold-700']};
     }
 
     span {
@@ -110,19 +110,19 @@ export const Phone = styled.div`
 
         text-align: center;
 
-        color: ${(props) => props.theme['purple-700']};
+        color: ${(props) => props.theme['rose-gold-700']};
     }
 
     span a {
 
         text-decoration: none;
-        color: ${(props) => props.theme['purple-700']};
+        color: ${(props) => props.theme['rose-gold-700']};
     }
 
     span a:hover {
         opacity: 0.9;
         transition: 0.3s;
-        color: ${(props) => props.theme['purple-500']};
+        color: ${(props) => props.theme['rose-gold-500']};
     }
 `
 
@@ -133,7 +133,7 @@ export const WhatsApp = styled.div`
     gap: 0.5rem;
 
     svg {
-        color: ${(props) => props.theme['purple-700']};
+        color: ${(props) => props.theme['rose-gold-700']};
     }
 
     span {
@@ -145,19 +145,19 @@ export const WhatsApp = styled.div`
 
         text-align: center;
 
-        color: ${(props) => props.theme['purple-700']};
+        color: ${(props) => props.theme['rose-gold-700']};
     }
 
     span a {
 
         text-decoration: none;
-        color: ${(props) => props.theme['purple-700']};
+        color: ${(props) => props.theme['rose-gold-700']};
     }
 
     span a:hover {
         opacity: 0.9;
         transition: 0.3s;
-        color: ${(props) => props.theme['purple-500']};
+        color: ${(props) => props.theme['rose-gold-500']};
     }
 `
 

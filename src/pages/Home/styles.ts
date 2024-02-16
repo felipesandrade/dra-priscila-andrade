@@ -24,12 +24,12 @@ export const CarouselContainer = styled(Carousel)`
     }
 
     h1 {
-        color: ${(props) => props.theme['blue-600']};
+        color: ${(props) => props.theme['aqua-green-400']};
         font-weight: bold;
     }
 
     h3 {
-        color: ${(props) => props.theme['green-100']};
+        color: ${(props) => props.theme['white']};
         font-weight: bold;
     }
 `
@@ -40,10 +40,10 @@ export const SlideButton = styled(Button)`
 
     display: inline;
 
-    background: ${(props) => props.theme['purple-700']};
+    background: ${(props) => props.theme['rose-gold-700']};
 
     &:hover {
-        background: ${(props) => props.theme['purple-700']};
+        background: ${(props) => props.theme['rose-gold-700']};
     }
 `
 

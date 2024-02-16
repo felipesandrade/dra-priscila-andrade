@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
     
     height: 4rem;
     
-    border-top: 1px solid ${(props) => props.theme['purple-200']};
+    /* border-top: 1px solid ${(props) => props.theme['purple-200']}; */
 `
 
 export const FooterContent = styled.div`
@@ -23,16 +23,16 @@ export const FooterContent = styled.div`
 `
 
 export const SocialMedia = styled.div`
-    color: ${(props) => props.theme['purple-700']};
+    color: ${(props) => props.theme['rose-gold-700']};
 
     a {
-        color: ${(props) => props.theme['purple-700']};     
+        color: ${(props) => props.theme['rose-gold-700']};     
         text-decoration: none;
 
         &:hover {
             opacity: 0.9;
             transition: 0.3s;
-            color: ${(props) => props.theme['purple-500']};
+            color: ${(props) => props.theme['rose-gold-500']};
         }
     }
 `
@@ -47,6 +47,6 @@ export const Copyright = styled.div`
 
     text-align: center;
 
-    color: ${(props) => props.theme['purple-500']};
+    color: ${(props) => props.theme['rose-gold-500']};
 
 `

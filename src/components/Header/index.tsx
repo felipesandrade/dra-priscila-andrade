@@ -1,6 +1,6 @@
 import { HeaderContainer, HeaderContent, MenuButton, Wrapper } from "./styles";
 
-import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila.svg';
+import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila-sem-fundo.svg';
 
 import { 
         NavLink,
