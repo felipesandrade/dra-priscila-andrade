@@ -50,8 +50,12 @@ export function Review(){
     const getReviewsFromApi = async () => {
         try {
             const response = await fetch(
-                '/api'
-            );
+                '/api', {
+                    headers: {
+                    Accept: "application/json",
+                }
+            }
+    );
             const json = await response.json();
             setReviewsSort(json.result.reviews);
         } catch (error) {
