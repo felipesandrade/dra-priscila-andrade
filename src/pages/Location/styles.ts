@@ -7,7 +7,7 @@ export const LocationContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    height: 55rem;
+    height: 48rem;
 
     background-color: ${(props) => props.theme['rose-gold-75']};
 
@@ -168,6 +168,7 @@ export const Doctoralia = styled.div`
 
 export const Map = styled.div`
     width: 100%;
+    height: 99%;
 
     iframe {
         border-radius:  8px;
@@ -176,7 +177,7 @@ export const Map = styled.div`
     //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
     @media(max-width: 630px) {
         height: 350px;
-        margin-left: 1rem;
+        //margin-left: 1rem;
     }
 `
 
