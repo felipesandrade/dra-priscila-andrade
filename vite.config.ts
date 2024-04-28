@@ -8,14 +8,12 @@ export default defineConfig (({ mode }) => {
 
   return {
     server: {
-      host: true,
-      port: 5173,
       proxy: {
         "/api": {
           ws: true,
           changeOrigin: true,
           secure: false,
-          target: `https://maps.googleapis.com/maps/api/place/details/json?place_id=${env.VITE_PLACE_ID}&key=${env.VITE_GOOGLE_MAPS_API_KEY}&reviews_sort=newest&fields=reviews`, 
+          target: env.GOOGLE_REVIEWS_URL,
           rewrite: (path) => path.replace(/^\/api/, ''),
         }, 
       },

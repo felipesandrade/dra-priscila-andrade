@@ -1,8 +1,12 @@
 {
     "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/"
-      }
+        {
+            "source": "/api/(.*)",
+            "destination": "@GOOGLE_REVIEWS_URL"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
     ]
-  }
+}
