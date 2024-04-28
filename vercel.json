@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/api/(.*)",
-            "destination": "@GOOGLE_REVIEWS_URL"
+            "destination": "/"
         },
         {
             "source": "/(.*)",
