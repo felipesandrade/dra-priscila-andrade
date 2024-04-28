@@ -50,7 +50,7 @@ export function Review(){
     const getReviewsFromApi = async () => {
         try {
             const response = await fetch(
-                '/api'
+                `https://maps.googleapis.com/maps/api/place/details/json?place_id=${import.meta.env.VITE_PLACE_ID}&key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&reviews_sort=newest&fields=reviews`
             );
             const json = await response.json();
             setReviewsSort(json.result.reviews);
