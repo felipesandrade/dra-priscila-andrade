@@ -24,9 +24,9 @@ export const WhatasappContainer = styled.div`
 
     border-radius: 35%;
 
-    box-shadow: 2px 2px 3px #999;
+    //box-shadow: 2px 2px 3px #999;
 
-    background-color: ${(props) => props.theme['green-800']};
+    background-color: ${(props) => props.theme['green-300']};
 
     color: ${(props) => props.theme['white']};
 
@@ -35,7 +35,7 @@ export const WhatasappContainer = styled.div`
     &:hover {
         opacity: 0.9;
         transition: 0.3s;
-        background: ${(props) => props.theme['green-800']};
+        background: ${(props) => props.theme['green-300']};
     }
 `
 
@@ -53,7 +53,7 @@ export const BackToTop = styled.div`
 
     border-radius: 35%;
 
-    box-shadow: 2px 2px 3px #999;
+    //box-shadow: 2px 2px 3px #999;
 
     background-color: ${(props) => props.theme['rose-gold-700']};
 

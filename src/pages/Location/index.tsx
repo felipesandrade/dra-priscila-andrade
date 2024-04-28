@@ -18,7 +18,7 @@ import { useEffect } from "react";
     
 import { Element } from 'react-scroll';
 
-import Photo from '../../assets/logo-clinica-ffaz-saude.svg'
+import Photo from '../../assets/logo-clinica-ffaz-saude.png'
     
 export function Location() {
 
@@ -71,7 +71,7 @@ export function Location() {
                 <Map>
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15925.293789056599!2d-38.5118398!3d-3.7395264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748f15190654b%3A0xac92ebd747168176!2sCl%C3%ADnica%20FFAZ%20Sa%C3%BAde%20Integrada!5e0!3m2!1spt-BR!2sbr!4v1703792786468!5m2!1spt-BR!2sbr" 
-                        width="90%" 
+                        width="100%" 
                         height="100%" 
                         style={{ border: 0 }} 
                         allowFullScreen 

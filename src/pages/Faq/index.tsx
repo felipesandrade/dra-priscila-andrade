@@ -52,7 +52,7 @@ export function Faq() {
                             <strong>Qual o tempo de duração da consulta ?</strong>
                         </header>
                         <span>
-                            A consulta dura em torno de 60 minutos, onde farei todo o processo
+                            A consulta dura em torno de 40 minutos, onde farei todo o processo
                             de escuta das queixas, alinhamento de expectativas,
                             exame físico, solicitação e análise de exames, definição da 
                             melhor opção de tratamento, e por fim orientação e emissão de documentação 

@@ -1,6 +1,6 @@
 import { HeaderContainer, HeaderContent, MenuButton, Wrapper } from "./styles";
 
-import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila-sem-fundo.svg';
+import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila-sem-fundo.png';
 
 import { 
         NavLink,
@@ -10,6 +10,7 @@ import {
 import {   
         Element, 
         Link as LinkScroll} from 'react-scroll';
+        
 import { List, WhatsappLogo } from 'phosphor-react';
 
 import { Button } from "../Button";
@@ -46,6 +47,9 @@ export function Header() {
                         </LinkScroll>
                         <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="consultation" smooth={true} spy={true} duration={500} href="#consulta" title="Vantagens Consulta Particular">
                             Consulta
+                        </LinkScroll>
+                        <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="clinic" smooth={true} spy={true} duration={500} href="#clinica" title="Conheça a nossa clínica">
+                            Clínica
                         </LinkScroll>
                         <LinkScroll onClick={() => setIsNavExpanded(false)} activeClass="active" className="scrollLink" to="faq" smooth={true} spy={true} duration={500} href="#faq" title="Dúvidas">
                             Dúvidas

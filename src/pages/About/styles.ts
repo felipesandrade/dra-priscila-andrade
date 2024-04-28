@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
     margin:  0 auto;
     /* padding: 0 1.5rem; */
     
-    padding: 1rem 1rem 5rem;
+    padding: 10rem 1rem 5rem;
     
     display: flex;
     align-items: center;
@@ -16,8 +16,6 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     position: relative;
     gap: 2rem;
-
-    padding: 1rem 1rem 5rem;
 
     //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
     @media(max-width: 768px) {
@@ -52,14 +50,34 @@ export const Content = styled.div`
 `
 
 export const ImageContainer = styled.div`
+    width: 1300px;
+    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
+    //object-fit: cover;
+    border-radius: 8px;
+    overflow: hidden;
+
     img {
-        width: 300px;
-        height: 400px;
-        max-width: 400px;
-        max-height: 400px;
-        object-fit: cover;
-        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: transform .5s ease;
     }
+
+    img:hover {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    
+
+
 `
 
 export const DoctorContainer = styled.div`
@@ -98,7 +116,7 @@ export const SkillCard = styled.div`
 
     padding: 1.5rem;
 
-    background: ${(props) => props.theme['rose-gold-300']};
+    background: ${(props) => props.theme['rose-gold-75']};
 
     header {
         display: flex;

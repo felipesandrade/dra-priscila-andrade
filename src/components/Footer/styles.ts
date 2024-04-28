@@ -23,16 +23,16 @@ export const FooterContent = styled.div`
 `
 
 export const SocialMedia = styled.div`
-    color: ${(props) => props.theme['rose-gold-700']};
+    color: ${(props) => props.theme['rose-gold-300']};
 
     a {
-        color: ${(props) => props.theme['rose-gold-700']};     
+        color: ${(props) => props.theme['rose-gold-300']};     
         text-decoration: none;
 
         &:hover {
             opacity: 0.9;
             transition: 0.3s;
-            color: ${(props) => props.theme['rose-gold-500']};
+            color: ${(props) => props.theme['rose-gold-300']};
         }
     }
 `

@@ -16,7 +16,7 @@ export const HeaderContainer = styled.div`
 
     /* border-bottom: 1px solid ${(props) => props.theme['rose-gold-200']}; */
     
-    background-color: ${(props) => props.theme['rose-gold-300']};
+    background-color: ${(props) => props.theme['rose-gold-75']};
 `
 
 export const HeaderContent = styled.header`
@@ -125,8 +125,9 @@ export const Wrapper = styled.div`
     justify-content: space-between;
 
     img {
-        width: 220px;
-        height: 70px;
+        width: 118px;
+        height: 71px;
+        aspect-ratio: 16 / 9;
     }
         
     @media (max-width: 869px) {

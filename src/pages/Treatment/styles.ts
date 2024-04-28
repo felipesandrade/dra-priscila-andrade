@@ -63,6 +63,11 @@ export const TreatmentContent = styled.div`
     .react-multi-carousel-dot--active button {
         background-color: gray;
     }
+
+    .react-multi-carousel-item{
+        max-width: 340px;
+        min-width: 340px;
+    }
 `
 
 export const TreatmentCard = styled.div`
@@ -76,8 +81,8 @@ export const TreatmentCard = styled.div`
     justify-content: center;
 
     img {
-        width: 200px;
-        height: 150px;
+        width: 280px;
+        height: 230px;
         object-fit: cover;
 
         margin-bottom: 1rem;

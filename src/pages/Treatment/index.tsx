@@ -68,7 +68,7 @@ export function Treatment(){
                         ssr={true} // means to render carousel on server-side.
                         removeArrowOnDeviceType={["tablet", "mobile"]}
                         autoPlay={true}
-                        autoPlaySpeed={2500}
+                        autoPlaySpeed={5000}
                         infinite={true}
                         // transitionDuration={1000}
                         // focusOnSelect={true}

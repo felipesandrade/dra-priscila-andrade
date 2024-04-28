@@ -44,7 +44,7 @@ export const BenefitCard = styled.div`
     text-align: center;
 
     color: ${(props) => props.theme['gray-500']};
-    background: ${(props) => props.theme['rose-gold-300']};
+    background: ${(props) => props.theme['rose-gold-75']};
 
     border-radius: 8px;
     padding: 2rem;

@@ -33,9 +33,10 @@ export const defaultTheme = {
     'purple-700': '#8664db',
 
     'rose-gold-50': '#f4e6e7',
+    'rose-gold-75': '#f4e6e7',
     'rose-gold-100': '#B76E79',
     'rose-gold-200': '#C58B93',
-    'rose-gold-300': '#f4e6e7',
+    'rose-gold-300': '#D89896',
     'rose-gold-500': '#BE7C86',
     'rose-gold-700': '#B76E79',
     

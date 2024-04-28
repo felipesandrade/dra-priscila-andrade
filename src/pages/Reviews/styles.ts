@@ -34,6 +34,10 @@ export const ReviewContent = styled.div`
     .custom-react-multi-carousel-list {
         padding-bottom: 2rem;
     }
+
+    .react-multi-carousel-dot--active button {
+        background-color: gray;
+    }
 `
 
 export const ReviewCard = styled.div`

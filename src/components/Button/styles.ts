@@ -8,9 +8,9 @@ export const ButtonContainer = styled.button`
     margin-right: 4rem;
     padding: 1rem;
 
-    box-shadow: 2px 2px 3px #999;
+    //box-shadow: 2px 2px 3px #999;
 
-    background: ${(props) => props.theme['green-800']};
+    background: ${(props) => props.theme['green-300']};
 
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ export const ButtonContainer = styled.button`
     gap: 0.3rem;
 
     font-size: 0.875rem;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 1px;
 
     color: ${(props) => props.theme['white']};
@@ -28,7 +28,7 @@ export const ButtonContainer = styled.button`
     &:hover {
         opacity: 0.9;
         transition: 0.3s;
-        background: ${(props) => props.theme['green-800']};
+        background: ${(props) => props.theme['green-300']};
     }
 
      // Esconde o botão quando o tamanho da tela for menor que 830px
