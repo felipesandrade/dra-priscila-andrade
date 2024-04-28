@@ -23,16 +23,16 @@ export const FooterContent = styled.div`
 `
 
 export const SocialMedia = styled.div`
-    color: ${(props) => props.theme['rose-gold-300']};
+    color: ${(props) => props.theme['rose-gold-700']};
 
     a {
-        color: ${(props) => props.theme['rose-gold-300']};     
+        color: ${(props) => props.theme['rose-gold-700']};     
         text-decoration: none;
 
         &:hover {
             opacity: 0.9;
             transition: 0.3s;
-            color: ${(props) => props.theme['rose-gold-300']};
+            color: ${(props) => props.theme['rose-gold-700']};
         }
     }
 `
@@ -47,6 +47,6 @@ export const Copyright = styled.div`
 
     text-align: center;
 
-    color: ${(props) => props.theme['rose-gold-500']};
+    color: ${(props) => props.theme['rose-gold-700']};
 
 `
