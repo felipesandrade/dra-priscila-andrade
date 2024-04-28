@@ -38,8 +38,8 @@ export function Home() {
                             alt="Primeiro slide"
                         />
                         <Carousel.Caption>
-                        <h3>Dra Rosa Priscila</h3>
-                        <p>Reumatologista</p>
+                        { /* <h3>Dra Rosa Priscila</h3> */ }
+                        { /* <p>Reumatologista</p> */ }
                         <h1>+3.000 pacientes tratados.</h1>
                         <p>Juntos, buscando melhorar sua qualidade de vida.</p>
                         <Link activeClass="active" className="scrollLink" to="about" smooth={true} spy={true} duration={400} href="#sobre"title="Sobre mim">
