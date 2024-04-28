@@ -53,6 +53,7 @@ export function Review(){
                 '/api'
             );
             const json = await response.json();
+            console.log({json});
             setReviewsSort(json.result.reviews);
         } catch (error) {
             console.error(error);

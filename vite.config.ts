@@ -13,7 +13,6 @@ export default defineConfig (({ mode }) => {
           ws: true,
           changeOrigin: true,
           secure: false,
-          fallback: true,
           target: `https://maps.googleapis.com/maps/api/place/details/json?place_id=${env.VITE_PLACE_ID}&key=${env.VITE_GOOGLE_MAPS_API_KEY}&reviews_sort=newest&fields=reviews`, 
           rewrite: (path) => path.replace(/^\/api/, ""),
         }, 
