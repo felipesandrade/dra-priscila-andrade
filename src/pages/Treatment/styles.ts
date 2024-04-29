@@ -68,6 +68,13 @@ export const TreatmentContent = styled.div`
         max-width: 340px;
         min-width: 340px;
     }
+
+    @media(max-width: 768px) {
+        .react-multi-carousel-item{
+            max-width: none;
+            min-width: none;
+        }
+    }
 `
 
 export const TreatmentCard = styled.div`

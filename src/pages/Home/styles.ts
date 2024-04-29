@@ -15,7 +15,7 @@ export const CarouselContainer = styled(Carousel)`
 
     img {
         object-fit: cover;
-        opacity: 0.9;
+        //opacity: 0.9;
     }
 
     p {

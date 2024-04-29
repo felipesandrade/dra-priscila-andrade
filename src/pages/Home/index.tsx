@@ -33,7 +33,7 @@ export function Home() {
                         <img
                             className="d-block w-100"
                             src={PhotoSlide1}
-                            height = "475"
+                            height = "550"
                             width = "1425"
                             alt="Primeiro slide"
                         />
@@ -56,7 +56,7 @@ export function Home() {
                         <img
                         className="d-block w-100"
                         src={PhotoSlide2}
-                        height = "475"
+                        height = "550"
                         width = "1425"
                         alt="Segundo slide"
                         />

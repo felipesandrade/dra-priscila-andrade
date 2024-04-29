@@ -143,8 +143,10 @@ export const MenuButton = styled.button`
     display: none;
     transition: background-color 0.2s ease-in-out;
 
-    background-color: ${(props) => props.theme['rose-gold-300']};
-    color: ${(props) => props.theme['rose-gold-700']};
+    padding: 0.5rem;
+
+    background-color: ${(props) => props.theme['rose-gold-700']};
+    color: ${(props) => props.theme['white']};
 
     font-weight: bold;
 
@@ -153,7 +155,7 @@ export const MenuButton = styled.button`
     &:hover {
         transition: 0.3s;
         color: ${(props) => props.theme['white']};
-        background: ${(props) => props.theme['rose-gold-700']};
+        background: ${(props) => props.theme['rose-gold-300']};
     }
 
     //Mostra o menu do tipo list quando o tamanho da tela for menor que 830px

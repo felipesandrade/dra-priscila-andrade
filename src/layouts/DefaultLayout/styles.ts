@@ -24,7 +24,7 @@ export const WhatasappContainer = styled.div`
 
     border-radius: 35%;
 
-    //box-shadow: 2px 2px 3px #999;
+    box-shadow: 2px 2px 8px #fff;
 
     background-color: ${(props) => props.theme['green-300']};
 
@@ -53,7 +53,7 @@ export const BackToTop = styled.div`
 
     border-radius: 35%;
 
-    //box-shadow: 2px 2px 3px #999;
+    box-shadow: 2px 2px 8px #fff;
 
     background-color: ${(props) => props.theme['rose-gold-700']};
 
