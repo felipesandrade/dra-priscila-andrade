@@ -7,7 +7,7 @@ export const LocationContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    height: 48rem;
+    height: 55rem;
 
     background-color: ${(props) => props.theme['rose-gold-75']};
 

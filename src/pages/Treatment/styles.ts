@@ -43,7 +43,9 @@ export const TextContent = styled.div`
 `
 
 export const TreatmentContent = styled.div`
-    width: calc(100% - 80px - 80px);
+    width: 100%;
+
+    max-width: 1280px;
 
     margin: 0 auto;
     padding: 0;
@@ -70,7 +72,7 @@ export const TreatmentContent = styled.div`
     }
 
     @media(max-width: 768px) {
-        .react-multi-carousel-item{
+        .react-multi-carousel-item {
             max-width: none;
             min-width: none;
         }
@@ -92,7 +94,7 @@ export const TreatmentCard = styled.div`
         height: 230px;
         object-fit: cover;
 
-        margin-bottom: 1rem;
+        margin: auto;
 
         border-radius: 8px;
     }

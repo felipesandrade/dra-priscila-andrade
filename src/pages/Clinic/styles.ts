@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const ClinicContainer =  styled.div`
     width: 100%;
 
-    max-width: 1120px;
+    max-width: 1280px;
     
     margin:  0 auto;
     /* padding: 0 1.5rem; */
@@ -70,7 +70,7 @@ export const ClinicContent = styled.div`
     }
 
     @media(max-width: 768px) {
-        .react-multi-carousel-item{
+        .react-multi-carousel-item {
             max-width: none;
             min-width: none;
         }
@@ -83,13 +83,13 @@ export const ClinicCard = styled.div`
     text-align: center;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     img {
-        width: 300px;
-        height: 250px;
+        width: 280px;
+        height: 230px;
         object-fit: cover;
 
         margin: auto;
