@@ -43,11 +43,6 @@ export function Review(){
             slidesToSlide: 1 // optional, default to 1.
         }
       };
-    
-    const placeID = import.meta.env.VITE_PLACE_ID;
-    const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-
-    const url = `/maps/api/place/details/json?place_id=${placeID}&key=${googleMapsApiKey}&reviews_sort=newest&fields=reviews`;
 
     const [isLoading, setLoading] = useState(true);
     const [reviewsSort, setReviewsSort] = useState([]);
@@ -62,8 +57,6 @@ export function Review(){
             }
             );
             const data = await response.json();
-            // const response = await axios.get('');
-            // const data = response.data;
             setReviewsSort(data.result.reviews);
         } catch (error) {
             console.error(error);
