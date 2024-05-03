@@ -13,7 +13,7 @@ export default defineConfig (({ command, mode }) => {
           ws: true,
           changeOrigin: true,
           secure: false,
-          target: env.VITE_GOOGLE_REVIEWS_URL,
+          target: env.VITE_GOOGLE_MAPS_REVIEWS_URL,
           rewrite: (path) => path.replace(/^\/api/, ''),
         }, 
       },
