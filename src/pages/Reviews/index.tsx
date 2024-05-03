@@ -18,6 +18,7 @@ import {
     ReviewCardStars,
     ReviewCardDate,
     } from "./styles";
+import { response } from 'express';
 
 export function Review(){
 
@@ -44,13 +45,15 @@ export function Review(){
         }
       };
 
+    const url = import.meta.env.VITE_GOOGLE_MAPS_REVIEWS_URL;
+
     const [isLoading, setLoading] = useState(true);
     const [reviewsSort, setReviewsSort] = useState([]);
   
     const getReviewsFromApi = async () => {
         try {
             const response = await fetch(
-                '/api', {
+                url, {
                     headers: {
                         Accept: "application/json",
                 }
