@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from "react";
+import React, { useEffect, useState} from 'react';
 
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
@@ -43,6 +43,11 @@ export function Review(){
             slidesToSlide: 1 // optional, default to 1.
         }
       };
+    
+    const placeID = import.meta.env.VITE_PLACE_ID;
+    const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
+    const url = `/maps/api/place/details/json?place_id=${placeID}&key=${googleMapsApiKey}&reviews_sort=newest&fields=reviews`;
 
     const [isLoading, setLoading] = useState(true);
     const [reviewsSort, setReviewsSort] = useState([]);
@@ -52,12 +57,14 @@ export function Review(){
             const response = await fetch(
                 '/api', {
                     headers: {
-                    Accept: "application/json",
+                        Accept: "application/json",
                 }
             }
-    );
-            const json = await response.json();
-            setReviewsSort(json.result.reviews);
+            );
+            const data = await response.json();
+            // const response = await axios.get('');
+            // const data = response.data;
+            setReviewsSort(data.result.reviews);
         } catch (error) {
             console.error(error);
         } finally {
@@ -90,8 +97,7 @@ export function Review(){
                         containerClass='custom-react-multi-carousel-list'
                     >
 
-                        {
-                        
+                        {reviewsSort.length === 0 ? <p>Carregando...</p> : (
                                 reviewsSort.map((review: any) => {
                                     if(review.rating === 5) {
                                         
@@ -130,7 +136,7 @@ export function Review(){
                                         
                                 })
                             
-                        }
+                        )}
                     </Carousel>
                 </ReviewContent>
             </ReviewContainer>
