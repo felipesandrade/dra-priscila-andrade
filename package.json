@@ -1,7 +1,6 @@
 {
   "name": "dra-priscila-andrade",
   "private": true,
-  "proxy": "https://maps.googleapis.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
