@@ -1,6 +1,10 @@
 {
     "rewrites": [
         {
+            "source": "/api(.*)",
+            "destination": "https://drarosapriscila.com.br/api"
+        },
+        {
             "source": "/(.*)",
             "destination": "/"
         }
