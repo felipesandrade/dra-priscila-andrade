@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/api(.*)",
-            "destination": "https://drarosapriscila.com.br/api"
+            "destination": "$VITE_GOOGLE_REVIEWS_URL"
         },
         {
             "source": "/(.*)",
