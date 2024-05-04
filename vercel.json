@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/api/(.*)",
-            "destination": "/middleware"
+            "source": "/api(.*)",
+            "destination": "proxyMiddleware.js"
         }
     ]
 }

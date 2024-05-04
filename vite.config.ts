@@ -11,7 +11,7 @@ export default defineConfig (({ command, mode }) => {
     server: {
       proxy: {
         "/api": {
-          ws: true,
+          //ws: true,
           changeOrigin: true,
           secure: false,
           target: env.VITE_GOOGLE_MAPS_REVIEWS_URL,
