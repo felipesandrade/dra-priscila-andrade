@@ -1,6 +1,6 @@
 {
     "rewrites": [
-        { "source": "/api/:path(.*)", "destination": "http://drarosapriscila.com/:path" },
+        { "source": "/api/:path(.*)", "destination": "/api/:path" },
         { "source": "/(.*)", "destination": "/" }
     ]
 }
