@@ -11,5 +11,3 @@ app.use(
     changeOrigin: true,
   }),
 );
-
-app.listen(5173);
