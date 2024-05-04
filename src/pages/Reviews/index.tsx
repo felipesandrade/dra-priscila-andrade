@@ -1,5 +1,7 @@
 import React, { useEffect, useState} from 'react';
 
+import axios from 'axios';
+
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 
@@ -52,14 +54,17 @@ export function Review(){
   
     const getReviewsFromApi = async () => {
         try {
-            const response = await fetch(
-                url, {
-                    headers: {
-                        Accept: "application/json",
+            const response = await axios.get(
+                url, { headers: {
+                    "Content-Type": "application/json",
+                    'Cache-Control': 'no-cache',
+                    'Access-Control-Allow-Origin': '*',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Methods': 'GET',
+                    }
                 }
-            }
             );
-            const data = await response.json();
+            const data = response.data;
             setReviewsSort(data.result.reviews);
         } catch (error) {
             console.error(error);
