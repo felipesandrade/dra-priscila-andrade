@@ -62,7 +62,7 @@ export function Review(){
                         'Access-Control-Allow-Origin': '*',
                         'Accept': 'application/json',
                         'Access-Control-Allow-Methods': 'GET',
-                    }
+                    },
                 }
             );
             const data = response.data;
