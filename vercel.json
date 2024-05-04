@@ -2,7 +2,7 @@
     "routes": [
         {
            "src": "/api(.*)",
-           "dest": "/vite.config.ts",
+           "dest": "/api",
            "methods": ["GET"],
            "headers": {
                "Access-Control-Allow-Origin": "*",

@@ -18,6 +18,7 @@ export default defineConfig (({ command, mode }) => {
           rewrite: (path) => path.replace(/^\/api/, ''),
         }, 
       },
+      cors: false,
     },
     plugins: [react(), vercel()],
   };
