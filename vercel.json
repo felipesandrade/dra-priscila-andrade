@@ -2,7 +2,7 @@
     "routes": [
         {
            "src": "/api(.*)",
-           "dest": "https://maps.googleapis.com/",
+           "dest": "/",
            "methods": ["GET"],
            "headers": {
                "Access-Control-Allow-Origin": "*",
