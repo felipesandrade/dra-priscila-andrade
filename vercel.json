@@ -2,7 +2,7 @@
     "routes": [
         {
            "src": "/api(.*)",
-           "dest": "/api",
+           "dest": "/proxy.ts",
            "methods": ["GET"],
            "headers": {
                "Access-Control-Allow-Origin": "*",
