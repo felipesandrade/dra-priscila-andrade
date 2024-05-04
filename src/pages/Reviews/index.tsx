@@ -55,7 +55,15 @@ export function Review(){
     const getReviewsFromApi = async () => {
         try {
             const response = await axios.get(
-                '/api'
+                '/api', { 
+                    headers: {
+                        "Content-Type": "application/json",
+                        'Cache-Control': 'no-cache',
+                        'Access-Control-Allow-Origin': '*',
+                        'Accept': 'application/json',
+                        'Access-Control-Allow-Methods': 'GET',
+                    },
+                }
             );
             const data = response.data;
             setReviewsSort(data.result.reviews);
