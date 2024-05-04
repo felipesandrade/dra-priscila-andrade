@@ -2,7 +2,7 @@
     "routes": [
         {
            "src": "/api(.*)",
-           "dest": "$VITE_GOOGLE_MAPS_REVIEWS_URL",
+           "dest": "https://maps.googleapis.com/maps/api/place/details/json",
            "methods": ["GET"],
            "headers": {
                "Access-Control-Allow-Origin": "*",
