@@ -55,7 +55,7 @@ export function Review(){
     const getReviewsFromApi = async () => {
         try {
             const response = await axios.get(
-                url, { headers: {
+                '/api', { headers: {
                     "Content-Type": "application/json",
                     'Cache-Control': 'no-cache',
                     'Access-Control-Allow-Origin': '*',
