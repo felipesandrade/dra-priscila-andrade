@@ -1,6 +1,6 @@
 {
     "rewrites": [
         { "source": "/api(.*)", "destination": "/api" },
-        { "source": "/(.*)", "destination": "./api/index.ts" }
+        { "source": "/(.*)", "destination": "https://maps.googleapis.com/maps/api/place/details/json?" }
     ]
 }
