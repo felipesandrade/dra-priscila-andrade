@@ -1,8 +1,18 @@
 {
+    "rewrites": [
+        {
+            "source": "/api(.*)",
+            "destination": "/api"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
+    ],
     "routes": [
         {
-           "src": "/api(.*)",
-           "dest": "/api",
+           "source": "/api(.*)",
+           "destination": "/api",
             "methods": ["GET"],
             "headers": {
                "Access-Control-Allow-Origin": "*",
@@ -11,5 +21,4 @@
            }
        }
      ]
-
 }
