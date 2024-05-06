@@ -1,6 +1,5 @@
 import React, { useEffect, useState} from 'react';
-
-import axios from 'axios';
+import { LoadScriptProps, useLoadScript, useJsApiLoader } from "@react-google-maps/api";
 
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
@@ -20,7 +19,8 @@ import {
     ReviewCardStars,
     ReviewCardDate,
     } from "./styles";
-import { response } from 'express';
+
+const libraries: LoadScriptProps['libraries'] = ["places"];
 
 export function Review(){
 
@@ -47,36 +47,87 @@ export function Review(){
         }
       };
 
-    const url = import.meta.env.VITE_GOOGLE_MAPS_REVIEWS_URL;
-
-    const [isLoading, setLoading] = useState(true);
-    const [reviewsSort, setReviewsSort] = useState([]);
-  
-    const getReviewsFromApi = async () => {
-        try {
-            const response = await axios.get(
-                '/api', { 
-                    headers: {
-                        "Content-Type": "application/json",
-                        'Cache-Control': 'no-cache',
-                        'Access-Control-Allow-Origin': '*',
-                        'Accept': 'application/json',
-                        'Access-Control-Allow-Methods': 'GET',
-                    },
+      const [placeName, setPlaceName] = useState("");
+    const [reviews, setReviews] = useState([]);
+    const {isLoaded, loadError} = useJsApiLoader({
+        //To get api key visit https://developers.google.com/maps/documentation/javascript/get-api-key
+        //Put your api key of project created in google cloud console
+        id: 'google-map-script',
+        googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
+        libraries,
+    });
+    
+      useEffect(() => {
+            const handleError = (status: any, place: any) => {
+                let errorMessage = "";
+                let httpStatusCode = "";
+{}
+                // Switch statement to assign error messages and http status codes based on Google Places Status
+                switch (status) {
+                    case google.maps.places.PlacesServiceStatus.OK:
+                        errorMessage = "Error: No reviews available for this place.";
+                        httpStatusCode = "200";
+                        break;
+                    case google.maps.places.PlacesServiceStatus.INVALID_REQUEST:
+                        errorMessage = "Error: Invalid query, check placeid parameters.";
+                        httpStatusCode = "400";
+                        break;
+                    case google.maps.places.PlacesServiceStatus.REQUEST_DENIED:
+                        errorMessage = "Error: The request was refused, check your api key and permissions.";
+                        httpStatusCode = "403";
+                        break;
+                    case google.maps.places.PlacesServiceStatus.NOT_FOUND:
+                        errorMessage = "Error: The placeid was not found.";
+                        httpStatusCode = "404";
+                        break;
+                    default: 
+                        errorMessage = `Error: loading reviews: ${status}`;
+                        httpStatusCode = "500";
+                        break;
                 }
-            );
-            const data = response.data;
-            setReviewsSort(data.result.reviews);
-        } catch (error) {
-            console.error(error);
-        } finally {
-            setLoading(false);
-        }
-    };
-  
-    useEffect(() => {
-        getReviewsFromApi();
-    }, [isLoading]);
+
+                // Warn in console with status, placeid information and error message.
+                console.warn(
+                    `Status: '${httpStatusCode ? `${httpStatusCode}.` : ""}${status}', PLACEID: '${place ? "FOUND" : "NOT FOUND" }'`
+                );
+
+                if(errorMessage) console.error(errorMessage);
+
+            };
+
+            if(isLoaded && !loadError) {
+                const mapDiv = document.createElement("div");
+                mapDiv.style.display = "none";
+                document.body.appendChild(mapDiv);
+
+                const service = new google.maps.places.PlacesService(mapDiv);
+                service.getDetails(
+                    {
+                        placeId: import.meta.env.VITE_GOOGLE_MAPS_PLACE_ID,
+                        fields: ["reviews", "photo", "name"],
+                        language: "pt",
+                        //reviews_no_translations: true,
+                        //reviews_sort: "newest",
+                    },
+                    (place: any, status: any) => {
+
+                        if(status === google.maps.places.PlacesServiceStatus.OK) {
+
+                            if(place?.reviews) {
+                                setReviews(place.reviews);
+                            }
+                            setPlaceName(place.name)
+                        } else {
+                            handleError(status, place);
+                        }
+                    }
+                );
+
+                return() => {
+                    document.body.removeChild(mapDiv);
+                };
+            }
+      }, [isLoaded, loadError]);
 
     return (
         <Element name="reviews" >
@@ -99,8 +150,8 @@ export function Review(){
                         containerClass='custom-react-multi-carousel-list'
                     >
 
-                        {reviewsSort.length === 0 ? <p>Carregando...</p> : (
-                                reviewsSort.map((review: any) => {
+                        {reviews.length === 0 ? <p>Carregando...</p> : (
+                                reviews.map((review: any) => {
                                     if(review.rating === 5) {
                                         
                                         const starsNumber = review.rating;
