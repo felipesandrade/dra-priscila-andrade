@@ -150,7 +150,7 @@ export function Review(){
                         containerClass='custom-react-multi-carousel-list'
                     >
 
-                        {reviews.length === 0 ? <p>Carregando...</p> : (
+                        {reviews.length === 0 ? <span>Carregando...</span> : (
                                 reviews.map((review: any) => {
                                     if(review.rating === 5) {
                                         
