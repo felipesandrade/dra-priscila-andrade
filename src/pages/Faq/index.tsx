@@ -17,7 +17,7 @@ export function Faq() {
                         Atualmente não atendo plano, por acreditar que para manter a 
                         qualidade e trazer benefícios reais ao paciente é necessário
                         dedicar mais tempo durante a consulta e garantir um acompanhamento
-                        mais próximo durtante o tratamento.
+                        mais próximo durante o tratamento.
                         </span>
                     </FaqCard>
                     <FaqCard>
@@ -44,7 +44,7 @@ export function Faq() {
                         </header>
                         <span>
                             Atualmente a consulta presencial e a teleconsulta custam 
-                            R$ 350,00 reais com direito a retorno em 30 dias.
+                            R$ 400,00 reais com direito a retorno em 30 dias.
                         </span>
                     </FaqCard>
                     <FaqCard>
