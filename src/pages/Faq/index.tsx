@@ -17,7 +17,7 @@ export function Faq() {
                         Atualmente não atendo plano, por acreditar que para manter a 
                         qualidade e trazer benefícios reais ao paciente é necessário
                         dedicar mais tempo durante a consulta e garantir um acompanhamento
-                        mais próximo durante o tratamento.
+                        mais próximo durante o tratamento. 
                         </span>
                     </FaqCard>
                     <FaqCard>
