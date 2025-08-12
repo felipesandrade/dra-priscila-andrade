@@ -43,8 +43,8 @@ export function Faq() {
                             <strong>Qual o valor da consulta ?</strong>
                         </header>
                         <span>
-                            Atualmente a consulta presencial e a teleconsulta custam 
-                            R$ 400,00 reais com direito a retorno em 30 dias.
+                            A consulta presencial custa R$ 450,00 e a teleconsulta 
+                            R$ 400,00 reais com direito a retorno gratuito em até 30 dias.
                         </span>
                     </FaqCard>
                     <FaqCard>
