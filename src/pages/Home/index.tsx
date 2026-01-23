@@ -82,7 +82,7 @@ export function Home() {
                                 <span>Clique agora mesmo, não perca tempo. </span>
                             </Text>
                             <Appointment>
-                                 <a href="https://bit.ly/rpriscila-reumato" target="_blank" title="Agende sua consulta">
+                                 <a href="https://bit.ly/drarosapriscila" target="_blank" title="Agende sua consulta">
                                     <BannerButton 
                                         iconExists={true}
                                         icon={<WhatsappLogo size={22} />}

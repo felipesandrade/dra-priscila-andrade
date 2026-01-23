@@ -61,7 +61,7 @@ export function Header() {
                             Contato
                         </LinkScroll>                             
                     </nav>
-                    <a href="https://bit.ly/rpriscila-reumato" target="_blank" title="Agende sua consulta">
+                    <a href="https://bit.ly/drarosapriscila" target="_blank" title="Agende sua consulta">
                         <Button 
                             iconExists={true}
                             icon={<WhatsappLogo size={22} />}
