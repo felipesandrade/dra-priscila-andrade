@@ -82,7 +82,7 @@ export function Home() {
                                 <span>Clique agora mesmo, não perca tempo. </span>
                             </Text>
                             <Appointment>
-                                 <a href="https://bit.ly/drarosapriscila" target="_blank" title="Agende sua consulta">
+                                 <a href="https://api.whatsapp.com/send?phone=5585991845806&text=Ol%c3%a1!+Gostaria+de+agendar+um+hor%c3%a1rio+com+a+Dra.+Rosa+Priscila+-+Reumatologista.&utm_source=google" target="_blank" title="Agende sua consulta">
                                     <BannerButton 
                                         iconExists={true}
                                         icon={<WhatsappLogo size={22} />}

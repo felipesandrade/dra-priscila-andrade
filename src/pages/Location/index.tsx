@@ -59,14 +59,16 @@ export function Location() {
                         <PhoneCall size={30} weight="fill" />
                         <span><a href="tel:8530852579">(85) 3085.2579</a></span>
                     </Phone>
+                    {/*
                     <Phone>
                         <WhatsappLogo size={30} weight="fill" />
                         <span><a href="https://bit.ly/clinica-ffaz" target="_blank" >(85) 98616.1228</a></span>
                     </Phone>
-                    {/* <Phone>
+                    */}
+                    <Phone>
                         <WhatsappLogo size={30} weight="fill" />
-                        <span><a href="https://bit.ly/rpriscila-reumato" target="_blank" >(85) 99273.2713</a></span>
-                    </Phone> */}
+                        <span><a href="https://api.whatsapp.com/send?phone=5585991845806&text=Ol%c3%a1!+Gostaria+de+agendar+um+hor%c3%a1rio+com+a+Dra.+Rosa+Priscila+-+Reumatologista.&utm_source=google" target="_blank" >+55 (85) 99184.5806</a></span>
+                    </Phone>
                 </Wrapper>
                 <Map>
                     <iframe 
