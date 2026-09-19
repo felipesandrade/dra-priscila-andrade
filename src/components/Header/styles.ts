@@ -163,3 +163,52 @@ export const MenuButton = styled.button`
         display: flex;
     }
 `
+
+export const SocialMedia = styled.div`
+    color: ${(props) => props.theme['rose-gold-700']};
+
+    a {
+        color: ${(props) => props.theme['rose-gold-700']};     
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.9;
+            transition: 0.3s;
+            color: ${(props) => props.theme['rose-gold-700']};
+        }
+    }
+
+     // Esconde o botão do instagram quando o tamanho da tela for menor que 830px
+     @media (max-width: 870px) {
+
+        .instagram-button { 
+            display: none;
+        }
+
+    }
+`
+
+export const SocialMediaMobile = styled.div`
+
+    display: none;
+
+    @media (max-width: 870px) {
+
+        display: block;
+
+        padding-left: 5rem;
+
+        color: ${(props) => props.theme['rose-gold-700']};
+
+        a {
+            color: ${(props) => props.theme['rose-gold-700']};     
+            text-decoration: none;
+
+            &:hover {
+                opacity: 0.9;
+                transition: 0.3s;
+                color: ${(props) => props.theme['rose-gold-700']};
+            }
+        }
+    }
+`

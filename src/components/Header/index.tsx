@@ -1,4 +1,13 @@
-import { HeaderContainer, HeaderContent, MenuButton, Wrapper } from "./styles";
+import {
+         HeaderContainer, 
+         HeaderContent, 
+         MenuButton, 
+         Wrapper,
+         SocialMedia,
+         SocialMediaMobile
+        } from "./styles";
+
+import { InstagramLogo } from 'phosphor-react';
 
 import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila-sem-fundo.png';
 
@@ -28,6 +37,13 @@ export function Header() {
                         <NavLink to="/" title="Início">
                             <img src={logoDraRosaPriscila} alt="Nome da médica com fonte"/>
                         </NavLink>
+
+                        <SocialMediaMobile>
+                            <a href="https://instagram.com/rosapriscila.reumato?igshid=YmMyMTA2M2Y=" title="Ícone Instagram" target="_blank">
+                                <InstagramLogo className="instagram-button" size={35} weight="fill" />
+                            </a>
+                        </SocialMediaMobile>
+                        
                         <MenuButton title="Botão menu">
                             <List size={28} onClick={() => { setIsNavExpanded(!isNavExpanded) }} />
                         </MenuButton>
@@ -61,6 +77,13 @@ export function Header() {
                             Contato
                         </LinkScroll>                             
                     </nav>
+
+                     <SocialMedia>
+                        <a href="https://instagram.com/rosapriscila.reumato?igshid=YmMyMTA2M2Y=" title="Ícone Instagram" target="_blank">
+                            <InstagramLogo className="instagram-button" size={35} weight="fill" />
+                        </a>
+                    </SocialMedia>
+
                     <a href="https://api.whatsapp.com/send?phone=5585991845806&text=Ol%c3%a1!+Gostaria+de+agendar+um+hor%c3%a1rio+com+a+Dra.+Rosa+Priscila+-+Reumatologista.&utm_source=google" target="_blank" title="Agende sua consulta">
                         <Button 
                             iconExists={true}
