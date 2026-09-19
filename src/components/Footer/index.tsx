@@ -16,7 +16,7 @@ export function Footer() {
                     </a>
                 </SocialMedia>
                 <Copyright>
-                    Copyright © 2023 Dra Rosa Priscila. Todos os Direitos Reservados.
+                    Copyright © 2026 Dra Rosa Priscila. Todos os Direitos Reservados.
                 </Copyright>
             </FooterContent>
         </FooterContainer>
