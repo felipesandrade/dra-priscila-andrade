@@ -16,7 +16,7 @@ export function DefaultLayout() {
             {/* Renderiza as rotas e envia para o componente correto */}
             <Outlet />
             <Footer />
-            <a href="https://bit.ly/drarosapriscila" target="_blank" title="Agende sua consulta">
+            <a href="https://api.whatsapp.com/send?phone=5585991845806&text=Ol%c3%a1!+Gostaria+de+agendar+um+hor%c3%a1rio+com+a+Dra.+Rosa+Priscila+-+Reumatologista.&utm_source=google" target="_blank" title="Agende sua consulta">
                 <WhatasappContainer>
                     <WhatsappLogo size={35} weight="regular"/>
                 </WhatasappContainer>
