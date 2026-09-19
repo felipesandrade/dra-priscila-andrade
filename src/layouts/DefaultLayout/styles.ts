@@ -16,6 +16,7 @@ export const WhatasappContainer = styled.div`
 
     display: flex;
     position: fixed;
+    z-index: 9999;
     align-items: center;
     justify-content: center;
 
@@ -45,6 +46,7 @@ export const BackToTop = styled.div`
 
     display: flex;
     position: fixed;
+    z-index: 9999;
     align-items: center;
     justify-content: center;
 
