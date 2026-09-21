@@ -19,7 +19,7 @@ import { Clinic } from '../Clinic';
 import { Review } from '../Reviews';
 import { Location } from '../Location';
 
-import PhotoSlide1 from '../../assets/photo-slide-1.webp';
+import PhotoSlide1 from '../../assets/photo-slide-8.webp';
 import PhotoSlide2 from '../../assets/photo-slide-2.webp';
 
 import { WhatsappLogo } from 'phosphor-react';
@@ -31,10 +31,8 @@ export function Home() {
                 <CarouselContainer>
                     <Carousel.Item>
                         <img
-                            className="d-block w-100"
+                            className="d-block"
                             src={PhotoSlide1}
-                            height = "550"
-                            width = "1425"
                             alt="Primeiro slide"
                         />
                         <Carousel.Caption>
@@ -54,10 +52,8 @@ export function Home() {
 
                     <Carousel.Item>
                         <img
-                        className="d-block w-100"
+                        className="d-block"
                         src={PhotoSlide2}
-                        height = "550"
-                        width = "1425"
                         alt="Segundo slide"
                         />
 

@@ -9,7 +9,7 @@ import {
 
 import { InstagramLogo } from 'phosphor-react';
 
-import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila-sem-fundo.png';
+import logoDraRosaPriscila from '../../assets/logo-dra-rosa-priscila-sem-fundo.svg';
 
 import { 
         NavLink,
@@ -35,7 +35,7 @@ export function Header() {
                 <HeaderContent>
                     <Wrapper>
                         <NavLink to="/" title="Início">
-                            <img src={logoDraRosaPriscila} alt="Nome da médica com fonte"/>
+                            <img className="logo-priscila-svg" src={logoDraRosaPriscila} alt="Nome da médica com fonte"/>
                         </NavLink>
 
                         <SocialMediaMobile>

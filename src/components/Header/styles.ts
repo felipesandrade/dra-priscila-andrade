@@ -123,11 +123,21 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    img {
+    
+    .logo-priscila-svg {
+       
         width: 118px;
         height: 71px;
         aspect-ratio: 16 / 9;
+
+        /* Força o navegador a renderizar o vetor com foco na precisão geométrica */
+        shape-rendering: geometricPrecision !important;
+            
+        /* Melhora a nitidez de textos internos do SVG, se houver */
+        text-rendering: optimizeLegibility !important;
+            
+        /* Previne glitches do Chrome ao redimensionar elementos no header */
+        image-rendering: -webkit-optimize-contrast !important;   
     }
         
     @media (max-width: 869px) {

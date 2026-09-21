@@ -31,18 +31,29 @@ export const Title = styled.h1`
     color: ${(props) => props.theme['rose-gold-700']};
 `
 
+export const SubTitle = styled.h6`
+    font-weight: 600;
+    text-align: center;
+
+    color: ${(props) => props.theme['gray-500']};
+`
+
 export const Content = styled.div`
-    width: calc(100% - 80px - 80px);
+    width: calc(100% - 160px);
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 2rem;
+    //max-width: 1120px;
+    margin: 0 auto 0 auto;
+    padding: 0;
 
 
      //Empilha os elementos a medida que o tamanho da tela vai reduzindo.
     @media(max-width: 768px) {
         flex-direction: column;
+        text-align: center;
         width: auto;
         height: auto;
     }
@@ -50,30 +61,48 @@ export const Content = styled.div`
 `
 
 export const ImageContainer = styled.div`
-    width: 1300px;
-    height: 400px;
-    max-width: 400px;
-    max-height: 400px;
-    //object-fit: cover;
+    flex: 1;
+    min-width: 340px;        /* Ocupa a largura total disponível do carrossel/grid */
+    height: 400px;           /* Altura fixa controlada para não pixelar */
     border-radius: 8px;
     overflow: hidden;
+    //margin: 0 auto;          /* Centraliza o contêiner na tela se ela for maior que 1300px */
+    position: relative;      /* Cria um contexto de renderização isolado */
+    
+    /* Corrige bugs de renderização de borda arredondada + overflow no Safari/Chrome */
+    -webkit-mask-image: -webkit-radial-gradient(white, black);  
 
     img {
         width: 100%;
         height: 100%;
-        -webkit-transition: -webkit-transform .5s ease;
-        transition: transform .5s ease;
+        object-fit: cover;   /* PREENCHE o espaço cortando as sobras sem distorcer os pixels */
+        object-position: center top;
+
+        //image-rendering: auto; /* Mantém a suavização padrão do navegador */
+         /* Força o navegador a recalcular a imagem gigante com foco na nitidez */
+        image-rendering: -webkit-optimize-contrast; 
+        image-rendering: high-quality; /* Suporte para navegadores modernos */
+
+        /* Transições de efeito de zoom */
+        -webkit-transition: -webkit-transform .4s ease-in-out;
+        transition: transform .4s ease-in-out;
+
+          /* Melhora a suavidade de imagens rotacionadas/ampliadas no hardware */
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
 
+    /* Efeito opcional: dá um leve zoom na imagem quando passa o mouse por cima do contêiner */
     img:hover {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
+        -webkit-transform: scale(1.8);
+        transform: scale(1.8);
     }
 
     @media(max-width: 768px) {
         flex-direction: column;
-        max-width: 300px;
-        max-height: 400px;
+        width: 100%;
+        min-width: 100%;
+        height: 350px;
     }
     
 

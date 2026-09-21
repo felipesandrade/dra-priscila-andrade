@@ -13,9 +13,33 @@ export const HomeContainer = styled.main`
 export const CarouselContainer = styled(Carousel)`
     margin-bottom: 4rem;
 
+       /* 1. Define uma altura controlada para o carrossel e seus itens */
+    .carousel-inner, .carousel-item {
+        height: 500px; /* Altere para 450px ou 350px conforme achar melhor */
+        overflow: hidden;
+
+        /* CORREÇÃO DO DESFOQUE: Remove o glitch visual causado pelo translate3d do Bootstrap */
+        -webkit-transform: none !important;
+        transform: none !important;
+        will-change: transform;
+    }
+
     img {
-        object-fit: cover;
+        width: 100%;
+        height: 100%;
         //opacity: 0.9;
+        object-fit: cover !important;
+        object-position: center 20%; /* Ajusta o foco vertical do corte (melhor para banners) */
+        
+        /* ATIVADO: Força o navegador a recalcular a imagem gigante com foco em nitidez máxima */
+        image-rendering: -webkit-optimize-contrast !important; 
+        image-rendering: high-quality !important;
+        
+        /* Neutraliza o embaçamento gerado pela aceleração gráfica 3D */
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
     }
 
     p {
@@ -34,6 +58,13 @@ export const CarouselContainer = styled(Carousel)`
         color: ${(props) => props.theme['white']};
         font-weight: bold;
         text-shadow: 2px 2px 3px #616161;
+    }
+
+    /* Responsividade para telas menores */
+    @media(max-width: 768px) {
+        .carousel-inner, .carousel-item {
+            height: 550px; /* Reduz a altura em celulares para encaixar melhor o banner */
+        }
     }
 `
 export const SlideButton = styled(Button)`

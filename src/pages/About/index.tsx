@@ -5,9 +5,10 @@ import { AboutContainer,
          ImageContainer, 
          SkillCard, 
          SkillsContainer, 
+         SubTitle, 
          Title } from "./styles";
 import { CheckSquare } from 'phosphor-react';
-import Photo from '../../assets/img-dra-rosa-priscila-principal.webp';
+import Photo from '../../assets/img-dra-rosa-priscila-principal-4.webp';
 
 export function About() {
     return (
@@ -16,6 +17,9 @@ export function About() {
                 <Title>
                     Quem é Dra. Rosa Priscila ?
                 </Title>
+                <SubTitle>
+                    CRM Nº 14.047 | RQE Nº 9204 | RQE Nº 9205
+                </SubTitle>
                 <Content>
                     <ImageContainer>
                         <img src={Photo} title="Foto Principal Dra Rosa Priscila" alt="Foto Principal Dra Rosa Priscila"/> 
